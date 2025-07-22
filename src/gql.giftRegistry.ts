@@ -1,0 +1,24 @@
+import {ID} from "./gql.ID";
+import {CustomerAddress} from "./gql.customerAddress";
+import {GiftRegistryDynamicAttribute} from "./gql.giftRegistryDynamicAttribute";
+import {GiftRegistryItemInterface} from "./gql.giftRegistryItemInterface";
+import {GiftRegistryRegistrant} from "./gql.giftRegistryRegistrant";
+import {GiftRegistryPrivacySettings} from "./gql.giftRegistryPrivacySettings";
+import {GiftRegistryStatus} from "./gql.giftRegistryStatus";
+import {GiftRegistryType} from "./gql.giftRegistryType";
+
+export type GiftRegistry = {
+    "created_at": string
+    "dynamic_attributes"?: GiftRegistryDynamicAttribute[] | null | undefined
+    "event_name": string
+    "items": GiftRegistryItemInterface[]
+    "message": string
+    "owner_name": string
+    "privacy_settings": GiftRegistryPrivacySettings
+    "registrants"?: GiftRegistryRegistrant[] | null | undefined
+    "shipping_address"?: CustomerAddress | null | undefined
+    "status": GiftRegistryStatus
+    "type"?: GiftRegistryType | null | undefined
+    "uid": ID
+}
+

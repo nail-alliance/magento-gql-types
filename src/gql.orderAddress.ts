@@ -1,0 +1,22 @@
+import {CountryCodeEnum} from "./gql.countryCodeEnum";
+import {AttributeValueInterface} from "./gql.attributeValueInterface";
+import {ID} from "./gql.ID";
+
+export type OrderAddress = {
+    "city": string
+    "company"?: string | null | undefined
+    "country_code"?: CountryCodeEnum | null | undefined
+    "custom_attributesV2": AttributeValueInterface[]
+    "fax"?: string | null | undefined
+    "firstname": string
+    "lastname": string
+    "middlename"?: string | null | undefined
+    "postcode"?: string | null | undefined
+    "prefix"?: string | null | undefined
+    "region"?: string | null | undefined
+    "region_id"?: ID | null | undefined
+    "street": string[]
+    "suffix"?: string | null | undefined
+    "telephone"?: string | null | undefined
+    "vat_id"?: string | null | undefined
+}

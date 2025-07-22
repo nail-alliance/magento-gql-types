@@ -1,0 +1,16 @@
+{
+  "name": "magento-gql-types",
+  "version": "1.0.0",
+  "description": "Magento GraphQl types",
+  "license": "ISC",
+  "author": "Fabian Nino",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  }
+}
