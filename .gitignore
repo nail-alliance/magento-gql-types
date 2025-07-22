@@ -1,5 +1,4 @@
 .idea
-dist
 
 ################################################################################
 ## macOS
@@ -9,8 +8,7 @@ dist
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon[
-]
+Icon[]
 
 # Thumbnails
 ._*
@@ -152,7 +150,6 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
 
 # Gatsby files
 .cache/

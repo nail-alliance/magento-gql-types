@@ -1,0 +1,3 @@
+export type CustomerToken = {
+    "token": string;
+};

@@ -1,0 +1,6 @@
+export declare enum AttributeMetadataErrorType {
+    ENTITY_NOT_FOUND = "ENTITY_NOT_FOUND",
+    ATTRIBUTE_NOT_FOUND = "ATTRIBUTE_NOT_FOUND",
+    FILTER_NOT_FOUND = "FILTER_NOT_FOUND",
+    UNDEFINED = "UNDEFINED"
+}

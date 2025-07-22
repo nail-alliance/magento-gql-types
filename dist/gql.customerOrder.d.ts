@@ -1,0 +1,54 @@
+import { ID } from "./gql.ID";
+import { AppliedCoupon } from "./gql.appliedCoupon";
+import { GiftMessage } from "./gql.giftMessage";
+import { GiftWrapping } from "./gql.giftWrapping";
+import { ApplyGiftCardToOrder } from "./gql.applyGiftCardToOrder";
+import { OrderActionType } from "./gql.orderActionType";
+import { OrderAddress } from "./gql.orderAddress";
+import { SalesCommentItem } from "./gql.salesCommentItem";
+import { CreditMemo } from "./gql.creditMemo";
+import { OrderTotal } from "./gql.orderTotal";
+import { OrderShipment } from "./gql.orderShipment";
+import { Returns } from "./gql.returns";
+import { OrderItemInterface } from "./gql.orderItemInterface";
+import { Invoice } from "./gql.invoice";
+import { OrderCustomerInfo } from "./gql.orderCustomerInfo";
+import { OrderPaymentMethod } from "./gql.orderPaymentMethod";
+export type CustomerOrder = {
+    "applied_coupons": AppliedCoupon[];
+    "applied_gift_cards": ApplyGiftCardToOrder[];
+    "available_actions": OrderActionType[];
+    "billing_address"?: OrderAddress | null | undefined;
+    "carrier"?: string | null | undefined;
+    "comments"?: SalesCommentItem[] | null | undefined;
+    /** @deprecated */
+    "created_at"?: string | null | undefined;
+    "credit_memos"?: CreditMemo[] | null | undefined;
+    "customer_info": OrderCustomerInfo;
+    "email"?: string | null | undefined;
+    "gift_message"?: GiftMessage | null | undefined;
+    "gift_receipt_included": boolean;
+    "gift_wrapping"?: GiftWrapping | null | undefined;
+    /** @deprecated */
+    "grand_total"?: number | null | undefined;
+    "id": ID;
+    /** @deprecated */
+    "increment_id"?: string | null | undefined;
+    "invoices": Invoice[];
+    "is_virtual": boolean;
+    "items"?: OrderItemInterface[] | null | undefined;
+    "items_eligible_for_return"?: OrderItemInterface[] | null | undefined;
+    "number": string;
+    "order_date": string;
+    "order_number": string;
+    "order_status_change_date": string;
+    "payment_methods"?: OrderPaymentMethod[] | null | undefined;
+    "printed_card_included": boolean;
+    "returns": Returns;
+    "shipments": OrderShipment[];
+    "shipping_address": OrderAddress;
+    "shipping_method": string;
+    "status": string;
+    "token": string;
+    "total": OrderTotal;
+};

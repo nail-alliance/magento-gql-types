@@ -1,0 +1,8 @@
+export declare enum ReturnItemStatus {
+    PENDING = "PENDING",
+    AUTHORIZED = "AUTHORIZED",
+    RECEIVED = "RECEIVED",
+    APPROVED = "APPROVED",
+    REJECTED = "REJECTED",
+    DENIED = "DENIED"
+}

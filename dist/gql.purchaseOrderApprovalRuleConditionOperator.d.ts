@@ -1,0 +1,6 @@
+export declare enum PurchaseOrderApprovalRuleConditionOperator {
+    MORE_THAN = "MORE_THAN",
+    LESS_THAN = "LESS_THAN",
+    MORE_THAN_OR_EQUAL_TO = "MORE_THAN_OR_EQUAL_TO",
+    LESS_THAN_OR_EQUAL_TO = "LESS_THAN_OR_EQUAL_TO"
+}
