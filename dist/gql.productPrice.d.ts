@@ -4,6 +4,6 @@ import { ProductDiscount } from "./gql.productDiscount";
 export type ProductPrice = {
     discount?: ProductDiscount;
     final_price: Money;
-    fixed_product_taxes?: [FixedProductTax];
+    fixed_product_taxes?: FixedProductTax[];
     regular_price: Money;
 };

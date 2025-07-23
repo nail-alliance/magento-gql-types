@@ -26,7 +26,7 @@ export interface ProductInterface {
     /** @deprecated */
     attribute_set_id?: Int;
     canonical_url?: String;
-    categories?: [CategoryInterface];
+    categories?: CategoryInterface[];
     /** @deprecated */
     category_gear?: String;
     /** @deprecated */
@@ -38,7 +38,7 @@ export interface ProductInterface {
     country_of_manufacture?: String;
     /** @deprecated */
     created_at?: String;
-    crosssell_products?: [ProductInterface];
+    crosssell_products?: ProductInterface[];
     custom_attributesV2?: ProductCustomAttributes;
     description?: ComplexTextValue;
     /** @deprecated */
@@ -63,9 +63,9 @@ export interface ProductInterface {
     /** @deprecated */
     material?: String;
     max_sale_qty?: Float;
-    media_gallery?: [MediaGalleryInterface];
+    media_gallery?: MediaGalleryInterface[];
     /** @deprecated */
-    media_gallery_entries?: [MediaGalleryEntry];
+    media_gallery_entries?: MediaGalleryEntry[];
     meta_description?: String;
     meta_keyword?: String;
     meta_title?: String;
@@ -84,16 +84,16 @@ export interface ProductInterface {
     /** @deprecated */
     price?: ProductPrices;
     price_range: PriceRange;
-    price_tiers?: [TierPrice];
-    product_links?: [ProductLinksInterface];
+    price_tiers?: TierPrice[];
+    product_links?: ProductLinksInterface[];
     /** @deprecated */
     purpose?: Int;
     quantity?: Float;
     rating_summary: Float;
-    related_products?: [ProductInterface];
+    related_products?: ProductInterface[];
     review_count: Int;
     reviews: ProductReviews;
-    rules?: [CatalogRule];
+    rules?: CatalogRule[];
     /** @deprecated */
     sale?: Int;
     short_description?: ComplexTextValue;
@@ -122,18 +122,18 @@ export interface ProductInterface {
     /** @deprecated */
     tier_price?: Float;
     /** @deprecated */
-    tier_prices?: [ProductTierPrices];
+    tier_prices?: ProductTierPrices[];
     /** @deprecated */
     type_id?: String;
     uid: ID;
     /** @deprecated */
     updated_at?: String;
-    upsell_products?: [ProductInterface];
+    upsell_products?: ProductInterface[];
     url_key?: String;
     /** @deprecated */
     url_path?: String;
-    url_rewrites?: [UrlRewrite];
+    url_rewrites?: UrlRewrite[];
     url_suffix?: String;
     /** @deprecated */
-    websites?: [Website];
+    websites?: Website[];
 }

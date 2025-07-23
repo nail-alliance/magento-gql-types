@@ -9,6 +9,6 @@ export type NegotiableQuoteBillingAddress = {
     lastname: String;
     postcode?: String;
     region?: NegotiableQuoteAddressRegion;
-    street: [String];
+    street: String[];
     telephone?: String;
 };

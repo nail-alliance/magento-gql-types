@@ -1,4 +1,4 @@
 import { ID } from "./gql.ID";
 export type PurchaseOrdersActionInput = {
-    purchase_order_uids: [ID];
+    purchase_order_uids: ID[];
 };

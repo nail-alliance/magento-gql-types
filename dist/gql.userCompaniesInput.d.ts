@@ -3,5 +3,5 @@ import { Int } from "./gql.int";
 export type UserCompaniesInput = {
     currentPage?: Int;
     pageSize?: Int;
-    sort?: [CompaniesSortInput];
+    sort?: CompaniesSortInput[];
 };

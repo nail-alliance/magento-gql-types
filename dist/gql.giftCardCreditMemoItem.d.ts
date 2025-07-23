@@ -6,7 +6,7 @@ import { ID } from "./gql.ID";
 import { GiftCardItem } from "./gql.giftCardItem";
 import { Discount } from "./gql.discount";
 export type GiftCardCreditMemoItem = {
-    discounts?: [Discount];
+    discounts?: Discount[];
     gift_card?: GiftCardItem;
     id: ID;
     order_item?: OrderItemInterface;

@@ -7,6 +7,6 @@ export type ReturnShippingAddress = {
     country: Country;
     postcode: String;
     region: Region;
-    street: [String];
+    street: String[];
     telephone?: String;
 };

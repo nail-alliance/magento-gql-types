@@ -9,13 +9,13 @@ import { GiftRegistryDynamicAttribute } from "./gql.giftRegistryDynamicAttribute
 import { String } from "./gql.string";
 export type GiftRegistry = {
     created_at: String;
-    dynamic_attributes?: [GiftRegistryDynamicAttribute];
+    dynamic_attributes?: GiftRegistryDynamicAttribute[];
     event_name: String;
-    items?: [GiftRegistryItemInterface];
+    items?: GiftRegistryItemInterface[];
     message: String;
     owner_name: String;
     privacy_settings: GiftRegistryPrivacySettings;
-    registrants?: [GiftRegistryRegistrant];
+    registrants?: GiftRegistryRegistrant[];
     shipping_address?: CustomerAddress;
     status: GiftRegistryStatus;
     type?: GiftRegistryType;

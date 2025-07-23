@@ -1,5 +1,5 @@
 import { ID } from "./gql.ID";
 export type RemoveProductsFromCompareListInput = {
-    products: [ID];
+    products: ID[];
     uid: ID;
 };

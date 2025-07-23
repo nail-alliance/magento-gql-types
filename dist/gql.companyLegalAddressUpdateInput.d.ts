@@ -6,6 +6,6 @@ export type CompanyLegalAddressUpdateInput = {
     country_id?: CountryCodeEnum;
     postcode?: String;
     region?: CustomerAddressRegionInput;
-    street?: [String];
+    street?: String[];
     telephone?: String;
 };

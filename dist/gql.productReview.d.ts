@@ -7,7 +7,7 @@ export type ProductReview = {
     created_at: String;
     nickname: String;
     product: ProductInterface;
-    ratings_breakdown: [ProductReviewRating];
+    ratings_breakdown: ProductReviewRating[];
     summary: String;
     text: String;
 };

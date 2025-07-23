@@ -11,7 +11,7 @@ export type SmartButtonsConfig = {
     is_visible?: Boolean;
     message_styles?: MessageStyles;
     payment_intent?: String;
-    sdk_params?: [SDKParams];
+    sdk_params?: SDKParams[];
     sort_order?: String;
     title?: String;
 };

@@ -1,5 +1,5 @@
 import { ID } from "./gql.ID";
 export type AddProductsToCompareListInput = {
-    products: [ID];
+    products: ID[];
     uid: ID;
 };

@@ -5,6 +5,6 @@ export type Aggregation = {
     attribute_code: String;
     count?: Int;
     label?: String;
-    options?: [AggregationOption];
+    options?: AggregationOption[];
     position?: Int;
 };

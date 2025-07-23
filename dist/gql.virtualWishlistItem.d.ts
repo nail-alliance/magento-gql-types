@@ -5,7 +5,7 @@ import { SelectedCustomizableOption } from "./gql.selectedCustomizableOption";
 import { String } from "./gql.string";
 export type VirtualWishlistItem = {
     added_at: String;
-    customizable_options: [SelectedCustomizableOption];
+    customizable_options: SelectedCustomizableOption[];
     description?: String;
     id: ID;
     product?: ProductInterface;

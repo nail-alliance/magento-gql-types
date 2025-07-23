@@ -18,7 +18,7 @@ export type ReturnItemAttributeMetadata = {
     is_unique: Boolean;
     label?: String;
     multiline_count?: Int;
-    options: [CustomAttributeOptionInterface];
+    options: CustomAttributeOptionInterface[];
     sort_order?: Int;
-    validate_rules?: [ValidationRule];
+    validate_rules?: ValidationRule[];
 };

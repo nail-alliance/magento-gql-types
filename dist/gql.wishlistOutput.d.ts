@@ -4,7 +4,7 @@ import { WishlistItem } from "./gql.wishlistItem";
 /** @deprecated */
 export type WishlistOutput = {
     /** @deprecated */
-    items?: [WishlistItem];
+    items?: WishlistItem[];
     /** @deprecated */
     items_count?: Int;
     /** @deprecated */

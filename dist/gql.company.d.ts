@@ -12,7 +12,7 @@ import { CompanyCredit } from "./gql.companyCredit";
 import { Customer } from "./gql.customer";
 import { CompanyAclResource } from "./gql.companyAclResource";
 export type Company = {
-    acl_resources?: [CompanyAclResource];
+    acl_resources?: CompanyAclResource[];
     company_admin?: Customer;
     credit: CompanyCredit;
     credit_history: CompanyCreditHistory;
@@ -21,7 +21,7 @@ export type Company = {
     legal_address?: CompanyLegalAddress;
     legal_name?: String;
     name?: String;
-    payment_methods?: [String];
+    payment_methods?: String[];
     reseller_id?: String;
     role?: CompanyRole;
     roles: CompanyRoles;

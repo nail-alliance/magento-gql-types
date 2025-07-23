@@ -4,11 +4,11 @@ import { Discount } from "./gql.discount";
 import { Money } from "./gql.money";
 export type InvoiceTotal = {
     base_grand_total: Money;
-    discounts?: [Discount];
+    discounts?: Discount[];
     grand_total: Money;
     shipping_handling?: ShippingHandling;
     subtotal: Money;
-    taxes?: [TaxItem];
+    taxes?: TaxItem[];
     total_shipping: Money;
     total_tax: Money;
 };

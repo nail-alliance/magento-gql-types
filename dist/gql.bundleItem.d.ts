@@ -7,7 +7,7 @@ import { Int } from "./gql.int";
 export type BundleItem = {
     /** @deprecated */
     option_id?: Int;
-    options?: [BundleItemOption];
+    options?: BundleItemOption[];
     position?: Int;
     price_range: PriceRange;
     required?: Boolean;

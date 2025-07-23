@@ -32,7 +32,7 @@ export type ConfigurableProduct = {
     /** @deprecated */
     attribute_set_id?: Int;
     canonical_url?: String;
-    categories?: [CategoryInterface];
+    categories?: CategoryInterface[];
     /** @deprecated */
     category_gear?: String;
     /** @deprecated */
@@ -41,12 +41,12 @@ export type ConfigurableProduct = {
     collar?: String;
     /** @deprecated */
     color?: Int;
-    configurable_options?: [ConfigurableProductOptions];
+    configurable_options?: ConfigurableProductOptions[];
     configurable_product_options_selection?: ConfigurableProductOptionsSelection;
     country_of_manufacture?: String;
     /** @deprecated */
     created_at?: String;
-    crosssell_products?: [ProductInterface];
+    crosssell_products?: ProductInterface[];
     custom_attributesV2?: ProductCustomAttributes;
     description?: ComplexTextValue;
     /** @deprecated */
@@ -71,9 +71,9 @@ export type ConfigurableProduct = {
     /** @deprecated */
     material?: String;
     max_sale_qty?: Float;
-    media_gallery?: [MediaGalleryInterface];
+    media_gallery?: MediaGalleryInterface[];
     /** @deprecated */
-    media_gallery_entries?: [MediaGalleryEntry];
+    media_gallery_entries?: MediaGalleryEntry[];
     meta_description?: String;
     meta_keyword?: String;
     meta_title?: String;
@@ -84,7 +84,7 @@ export type ConfigurableProduct = {
     new_from_date?: String;
     new_to_date?: String;
     only_x_left_in_stock?: Float;
-    options?: [CustomizableOptionInterface];
+    options?: CustomizableOptionInterface[];
     options_container?: String;
     /** @deprecated */
     pattern?: String;
@@ -93,18 +93,18 @@ export type ConfigurableProduct = {
     /** @deprecated */
     price?: ProductPrices;
     price_range: PriceRange;
-    price_tiers?: [TierPrice];
-    product_links?: [ProductLinksInterface];
+    price_tiers?: TierPrice[];
+    product_links?: ProductLinksInterface[];
     /** @deprecated */
     purpose?: Int;
     quantity?: Float;
     rating_summary: Float;
     redirect_code: Int;
-    related_products?: [ProductInterface];
+    related_products?: ProductInterface[];
     relative_url?: String;
     review_count: Int;
     reviews: ProductReviews;
-    rules?: [CatalogRule];
+    rules?: CatalogRule[];
     /** @deprecated */
     sale?: Int;
     short_description?: ComplexTextValue;
@@ -133,21 +133,21 @@ export type ConfigurableProduct = {
     /** @deprecated */
     tier_price?: Float;
     /** @deprecated */
-    tier_prices?: [ProductTierPrices];
+    tier_prices?: ProductTierPrices[];
     type?: UrlRewriteEntityTypeEnum;
     /** @deprecated */
     type_id?: String;
     uid: ID;
     /** @deprecated */
     updated_at?: String;
-    upsell_products?: [ProductInterface];
+    upsell_products?: ProductInterface[];
     url_key?: String;
     /** @deprecated */
     url_path?: String;
-    url_rewrites?: [UrlRewrite];
+    url_rewrites?: UrlRewrite[];
     url_suffix?: String;
-    variants?: [ConfigurableVariant];
+    variants?: ConfigurableVariant[];
     /** @deprecated */
-    websites?: [Website];
+    websites?: Website[];
     weight?: Float;
 };

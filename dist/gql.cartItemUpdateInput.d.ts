@@ -7,7 +7,7 @@ export type CartItemUpdateInput = {
     /** @deprecated */
     cart_item_id?: Int;
     cart_item_uid?: ID;
-    customizable_options?: [CustomizableOptionInput];
+    customizable_options?: CustomizableOptionInput[];
     gift_message?: GiftMessageInput;
     gift_wrapping_id?: ID;
     quantity?: Float;

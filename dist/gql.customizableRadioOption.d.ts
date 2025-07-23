@@ -10,5 +10,5 @@ export type CustomizableRadioOption = {
     sort_order?: Int;
     title?: String;
     uid: ID;
-    value?: [CustomizableRadioValue];
+    value?: CustomizableRadioValue[];
 };

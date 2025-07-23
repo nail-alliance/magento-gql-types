@@ -3,6 +3,6 @@ import { DeleteNegotiableQuoteOperationResult } from "./gql.deleteNegotiableQuot
 import { NegotiableQuotesOutput } from "./gql.negotiableQuotesOutput";
 export type DeleteNegotiableQuotesOutput = {
     negotiable_quotes?: NegotiableQuotesOutput;
-    operation_results: [DeleteNegotiableQuoteOperationResult];
+    operation_results: DeleteNegotiableQuoteOperationResult[];
     result_status: BatchMutationStatus;
 };

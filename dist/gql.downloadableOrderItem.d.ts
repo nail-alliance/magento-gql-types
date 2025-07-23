@@ -11,10 +11,10 @@ import { Boolean } from "./gql.boolean";
 import { DownloadableItemsLinks } from "./gql.downloadableItemsLinks";
 import { Discount } from "./gql.discount";
 export type DownloadableOrderItem = {
-    discounts?: [Discount];
-    downloadable_links?: [DownloadableItemsLinks];
+    discounts?: Discount[];
+    downloadable_links?: DownloadableItemsLinks[];
     eligible_for_return?: Boolean;
-    entered_options?: [OrderItemOption];
+    entered_options?: OrderItemOption[];
     gift_message?: GiftMessage;
     gift_wrapping?: GiftWrapping;
     id: ID;
@@ -32,6 +32,6 @@ export type DownloadableOrderItem = {
     quantity_return_requested?: Float;
     quantity_returned?: Float;
     quantity_shipped?: Float;
-    selected_options?: [OrderItemOption];
+    selected_options?: OrderItemOption[];
     status?: String;
 };

@@ -5,7 +5,7 @@ import { String } from "./gql.string";
 export type ReCaptchaConfigurationV3 = {
     badge_position: String;
     failure_message: String;
-    forms: [ReCaptchaFormEnum];
+    forms: ReCaptchaFormEnum[];
     is_enabled: Boolean;
     language_code?: String;
     minimum_score: Float;

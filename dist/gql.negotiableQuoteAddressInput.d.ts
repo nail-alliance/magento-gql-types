@@ -11,6 +11,6 @@ export type NegotiableQuoteAddressInput = {
     region?: String;
     region_id?: Int;
     save_in_address_book?: Boolean;
-    street: [String];
+    street: String[];
     telephone?: String;
 };

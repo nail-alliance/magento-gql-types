@@ -195,7 +195,7 @@ export type StoreConfig = {
     no_route?: String;
     optional_zip_countries?: String;
     order_cancellation_enabled: Boolean;
-    order_cancellation_reasons: [CancellationReason];
+    order_cancellation_reasons: CancellationReason[];
     orders_invoices_credit_memos_display_full_summary: Boolean;
     orders_invoices_credit_memos_display_grandtotal: Boolean;
     orders_invoices_credit_memos_display_price: Int;

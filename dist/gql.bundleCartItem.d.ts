@@ -12,11 +12,11 @@ import { SelectedCustomizableOption } from "./gql.selectedCustomizableOption";
 import { SelectedBundleOption } from "./gql.selectedBundleOption";
 import { GiftWrapping } from "./gql.giftWrapping";
 export type BundleCartItem = {
-    available_gift_wrapping: [GiftWrapping];
-    bundle_options: [SelectedBundleOption];
-    customizable_options: [SelectedCustomizableOption];
-    discount?: [Discount];
-    errors?: [CartItemError];
+    available_gift_wrapping: GiftWrapping[];
+    bundle_options: SelectedBundleOption[];
+    customizable_options: SelectedCustomizableOption[];
+    discount?: Discount[];
+    errors?: CartItemError[];
     gift_message?: GiftMessage;
     gift_wrapping?: GiftWrapping;
     /** @deprecated */
@@ -25,8 +25,8 @@ export type BundleCartItem = {
     max_qty?: Float;
     min_qty?: Float;
     not_available_message?: String;
-    note_from_buyer?: [ItemNote];
-    note_from_seller?: [ItemNote];
+    note_from_buyer?: ItemNote[];
+    note_from_seller?: ItemNote[];
     prices?: CartItemPrices;
     product: ProductInterface;
     quantity: Float;

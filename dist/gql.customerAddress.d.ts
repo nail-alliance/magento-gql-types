@@ -12,13 +12,13 @@ export type CustomerAddress = {
     /** @deprecated */
     country_id?: String;
     /** @deprecated */
-    custom_attributes?: [CustomerAddressAttribute];
-    custom_attributesV2: [AttributeValueInterface];
+    custom_attributes?: CustomerAddressAttribute[];
+    custom_attributesV2: AttributeValueInterface[];
     /** @deprecated */
     customer_id?: Int;
     default_billing?: Boolean;
     default_shipping?: Boolean;
-    extension_attributes?: [CustomerAddressAttribute];
+    extension_attributes?: CustomerAddressAttribute[];
     fax?: String;
     firstname?: String;
     id?: Int;
@@ -28,7 +28,7 @@ export type CustomerAddress = {
     prefix?: String;
     region?: CustomerAddressRegion;
     region_id?: Int;
-    street?: [String];
+    street?: String[];
     suffix?: String;
     telephone?: String;
     vat_id?: String;

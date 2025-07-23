@@ -7,7 +7,7 @@ import { ID } from "./gql.ID";
 export type Wishlist = {
     id?: ID;
     /** @deprecated */
-    items?: [WishlistItem];
+    items?: WishlistItem[];
     items_count?: Int;
     items_v2?: WishlistItems;
     name?: String;

@@ -28,14 +28,14 @@ import { Boolean } from "./gql.boolean";
 import { CustomerAddresses } from "./gql.customerAddresses";
 import { CustomerAddress } from "./gql.customerAddress";
 export type Customer = {
-    addresses?: [CustomerAddress];
+    addresses?: CustomerAddress[];
     addressesV2?: CustomerAddresses;
     allow_remote_shopping_assistance: Boolean;
     companies: UserCompaniesOutput;
     compare_list?: CompareList;
     confirmation_status: ConfirmationStatusEnum;
     created_at?: String;
-    custom_attributes?: [AttributeValueInterface];
+    custom_attributes?: AttributeValueInterface[];
     date_of_birth?: String;
     default_billing?: String;
     default_shipping?: String;
@@ -44,7 +44,7 @@ export type Customer = {
     email?: String;
     firstname?: String;
     gender?: Int;
-    gift_registries?: [GiftRegistry];
+    gift_registries?: GiftRegistry[];
     gift_registry?: GiftRegistry;
     group?: CustomerGroup;
     /** @deprecated */
@@ -69,7 +69,7 @@ export type Customer = {
     reviews: ProductReviews;
     reward_points?: RewardPoints;
     role?: CompanyRole;
-    segments?: [CustomerSegment];
+    segments?: CustomerSegment[];
     status?: CompanyUserStatusEnum;
     store_credit?: CustomerStoreCredit;
     structure_id: ID;
@@ -80,5 +80,5 @@ export type Customer = {
     /** @deprecated */
     wishlist: Wishlist;
     wishlist_v2?: Wishlist;
-    wishlists: [Wishlist];
+    wishlists: Wishlist[];
 };

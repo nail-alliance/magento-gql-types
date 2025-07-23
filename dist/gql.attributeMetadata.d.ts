@@ -13,5 +13,5 @@ export type AttributeMetadata = {
     is_required: Boolean;
     is_unique: Boolean;
     label?: String;
-    options: [CustomAttributeOptionInterface];
+    options: CustomAttributeOptionInterface[];
 };

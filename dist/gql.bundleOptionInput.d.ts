@@ -4,5 +4,5 @@ import { Int } from "./gql.int";
 export type BundleOptionInput = {
     id: Int;
     quantity: Float;
-    value: [String];
+    value: String[];
 };

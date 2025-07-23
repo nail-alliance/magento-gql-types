@@ -8,16 +8,16 @@ import { String } from "./gql.string";
 import { CartItemError } from "./gql.cartItemError";
 import { Discount } from "./gql.discount";
 export interface CartItemInterface {
-    discount?: [Discount];
-    errors?: [CartItemError];
+    discount?: Discount[];
+    errors?: CartItemError[];
     /** @deprecated */
     id: String;
     is_available: Boolean;
     max_qty?: Float;
     min_qty?: Float;
     not_available_message?: String;
-    note_from_buyer?: [ItemNote];
-    note_from_seller?: [ItemNote];
+    note_from_buyer?: ItemNote[];
+    note_from_seller?: ItemNote[];
     prices?: CartItemPrices;
     product: ProductInterface;
     quantity: Float;

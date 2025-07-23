@@ -4,7 +4,7 @@ import { AttributeValueInput } from "./gql.attributeValueInput";
 import { Boolean } from "./gql.boolean";
 export type CustomerUpdateInput = {
     allow_remote_shopping_assistance?: Boolean;
-    custom_attributes?: [AttributeValueInput];
+    custom_attributes?: AttributeValueInput[];
     date_of_birth?: String;
     dob?: String;
     firstname?: String;

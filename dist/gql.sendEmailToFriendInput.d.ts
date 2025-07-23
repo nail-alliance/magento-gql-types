@@ -3,6 +3,6 @@ import { SendEmailToFriendRecipientInput } from "./gql.sendEmailToFriendRecipien
 import { Int } from "./gql.int";
 export type SendEmailToFriendInput = {
     product_id: Int;
-    recipients: [SendEmailToFriendRecipientInput];
+    recipients: SendEmailToFriendRecipientInput[];
     sender: SendEmailToFriendSenderInput;
 };

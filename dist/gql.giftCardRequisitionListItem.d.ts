@@ -4,7 +4,7 @@ import { ProductInterface } from "./gql.productInterface";
 import { GiftCardOptions } from "./gql.giftCardOptions";
 import { SelectedCustomizableOption } from "./gql.selectedCustomizableOption";
 export type GiftCardRequisitionListItem = {
-    customizable_options: [SelectedCustomizableOption];
+    customizable_options: SelectedCustomizableOption[];
     gift_card_options: GiftCardOptions;
     product: ProductInterface;
     quantity: Float;

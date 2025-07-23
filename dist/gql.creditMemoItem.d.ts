@@ -5,7 +5,7 @@ import { OrderItemInterface } from "./gql.orderItemInterface";
 import { ID } from "./gql.ID";
 import { Discount } from "./gql.discount";
 export type CreditMemoItem = {
-    discounts?: [Discount];
+    discounts?: Discount[];
     id: ID;
     order_item?: OrderItemInterface;
     product_name?: String;

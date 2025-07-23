@@ -8,11 +8,11 @@ import { String } from "./gql.string";
 import { ReturnComment } from "./gql.returnComment";
 import { ReturnShippingCarrier } from "./gql.returnShippingCarrier";
 export type Return = {
-    available_shipping_carriers?: [ReturnShippingCarrier];
-    comments?: [ReturnComment];
+    available_shipping_carriers?: ReturnShippingCarrier[];
+    comments?: ReturnComment[];
     created_at: String;
     customer: ReturnCustomer;
-    items?: [ReturnItem];
+    items?: ReturnItem[];
     number: String;
     order?: CustomerOrder;
     shipping?: ReturnShipping;

@@ -5,5 +5,5 @@ export type ConfigurableProductOption = {
     attribute_code: String;
     label: String;
     uid: ID;
-    values?: [ConfigurableProductOptionValue];
+    values?: ConfigurableProductOptionValue[];
 };

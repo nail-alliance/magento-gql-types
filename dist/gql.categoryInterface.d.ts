@@ -8,8 +8,8 @@ import { Breadcrumb } from "./gql.breadcrumb";
 import { String } from "./gql.string";
 export interface CategoryInterface {
     automatic_sorting?: String;
-    available_sort_by?: [String];
-    breadcrumbs?: [Breadcrumb];
+    available_sort_by?: String[];
+    breadcrumbs?: Breadcrumb[];
     canonical_url?: String;
     children_count?: String;
     cms_block?: CmsBlock;

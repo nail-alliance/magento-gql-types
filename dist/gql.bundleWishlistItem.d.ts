@@ -6,8 +6,8 @@ import { SelectedBundleOption } from "./gql.selectedBundleOption";
 import { String } from "./gql.string";
 export type BundleWishlistItem = {
     added_at: String;
-    bundle_options?: [SelectedBundleOption];
-    customizable_options: [SelectedCustomizableOption];
+    bundle_options?: SelectedBundleOption[];
+    customizable_options: SelectedCustomizableOption[];
     description?: String;
     id: ID;
     product?: ProductInterface;

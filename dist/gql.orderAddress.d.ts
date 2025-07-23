@@ -6,7 +6,7 @@ export type OrderAddress = {
     city: String;
     company?: String;
     country_code?: CountryCodeEnum;
-    custom_attributesV2: [AttributeValueInterface];
+    custom_attributesV2: AttributeValueInterface[];
     fax?: String;
     firstname: String;
     lastname: String;
@@ -15,7 +15,7 @@ export type OrderAddress = {
     prefix?: String;
     region?: String;
     region_id?: ID;
-    street: [String];
+    street: String[];
     suffix?: String;
     telephone?: String;
     vat_id?: String;

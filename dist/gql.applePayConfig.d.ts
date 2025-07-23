@@ -8,7 +8,7 @@ export type ApplePayConfig = {
     is_visible?: Boolean;
     payment_intent?: String;
     payment_source?: String;
-    sdk_params?: [SDKParams];
+    sdk_params?: SDKParams[];
     sort_order?: String;
     title?: String;
 };

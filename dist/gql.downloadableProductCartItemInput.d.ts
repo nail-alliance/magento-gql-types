@@ -2,7 +2,7 @@ import { DownloadableProductLinksInput } from "./gql.downloadableProductLinksInp
 import { CartItemInput } from "./gql.cartItemInput";
 import { CustomizableOptionInput } from "./gql.customizableOptionInput";
 export type DownloadableProductCartItemInput = {
-    customizable_options?: [CustomizableOptionInput];
+    customizable_options?: CustomizableOptionInput[];
     data: CartItemInput;
-    downloadable_product_links?: [DownloadableProductLinksInput];
+    downloadable_product_links?: DownloadableProductLinksInput[];
 };

@@ -3,5 +3,5 @@ import { Wishlist } from "./gql.wishlist";
 export type CopyProductsBetweenWishlistsOutput = {
     destination_wishlist: Wishlist;
     source_wishlist: Wishlist;
-    user_errors: [WishListUserInputError];
+    user_errors: WishListUserInputError[];
 };

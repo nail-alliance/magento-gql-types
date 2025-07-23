@@ -8,5 +8,5 @@ export type SelectedBundleOption = {
     label: String;
     type: String;
     uid: ID;
-    values: [SelectedBundleOptionValue];
+    values: SelectedBundleOptionValue[];
 };

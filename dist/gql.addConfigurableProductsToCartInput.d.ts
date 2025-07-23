@@ -2,5 +2,5 @@ import { ConfigurableProductCartItemInput } from "./gql.configurableProductCartI
 import { String } from "./gql.string";
 export type AddConfigurableProductsToCartInput = {
     cart_id: String;
-    cart_items: [ConfigurableProductCartItemInput];
+    cart_items: ConfigurableProductCartItemInput[];
 };

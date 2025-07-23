@@ -9,10 +9,10 @@ import { Breadcrumb } from "./gql.breadcrumb";
 import { String } from "./gql.string";
 export type CategoryTree = {
     automatic_sorting?: String;
-    available_sort_by?: [String];
-    breadcrumbs?: [Breadcrumb];
+    available_sort_by?: String[];
+    breadcrumbs?: Breadcrumb[];
     canonical_url?: String;
-    children?: [CategoryTree];
+    children?: CategoryTree[];
     children_count?: String;
     cms_block?: CmsBlock;
     /** @deprecated */

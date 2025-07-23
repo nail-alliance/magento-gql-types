@@ -7,7 +7,7 @@ export interface CartAddressInterface {
     city: String;
     company?: String;
     country: CartAddressCountry;
-    custom_attributes: [AttributeValueInterface];
+    custom_attributes: AttributeValueInterface[];
     fax?: String;
     firstname: String;
     id?: Int;
@@ -16,7 +16,7 @@ export interface CartAddressInterface {
     postcode?: String;
     prefix?: String;
     region?: CartAddressRegion;
-    street: [String];
+    street: String[];
     suffix?: String;
     telephone?: String;
     uid: String;

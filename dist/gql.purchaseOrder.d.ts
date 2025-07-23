@@ -9,12 +9,12 @@ import { PurchaseOrderComment } from "./gql.purchaseOrderComment";
 import { PurchaseOrderAction } from "./gql.purchaseOrderAction";
 import { PurchaseOrderRuleApprovalFlow } from "./gql.purchaseOrderRuleApprovalFlow";
 export type PurchaseOrder = {
-    approval_flow: [PurchaseOrderRuleApprovalFlow];
-    available_actions: [PurchaseOrderAction];
-    comments: [PurchaseOrderComment];
+    approval_flow: PurchaseOrderRuleApprovalFlow[];
+    available_actions: PurchaseOrderAction[];
+    comments: PurchaseOrderComment[];
     created_at: String;
     created_by?: Customer;
-    history_log: [PurchaseOrderHistoryItem];
+    history_log: PurchaseOrderHistoryItem[];
     number: String;
     order?: CustomerOrder;
     quote?: Cart;

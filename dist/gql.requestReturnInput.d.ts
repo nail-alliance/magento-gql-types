@@ -4,6 +4,6 @@ import { String } from "./gql.string";
 export type RequestReturnInput = {
     comment_text?: String;
     contact_email?: String;
-    items: [RequestReturnItemInput];
+    items: RequestReturnItemInput[];
     order_uid: ID;
 };

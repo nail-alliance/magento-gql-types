@@ -1,7 +1,7 @@
 import { ExchangeRate } from "./gql.exchangeRate";
 import { String } from "./gql.string";
 export type Currency = {
-    available_currency_codes?: [String];
+    available_currency_codes?: String[];
     base_currency_code?: String;
     base_currency_symbol?: String;
     /** @deprecated */
@@ -10,5 +10,5 @@ export type Currency = {
     default_display_currecy_symbol?: String;
     default_display_currency_code?: String;
     default_display_currency_symbol?: String;
-    exchange_rates?: [ExchangeRate];
+    exchange_rates?: ExchangeRate[];
 };

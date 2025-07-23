@@ -4,8 +4,8 @@ import { Discount } from "./gql.discount";
 import { ProductDiscount } from "./gql.productDiscount";
 export type CartItemPrices = {
     catalog_discount?: ProductDiscount;
-    discounts?: [Discount];
-    fixed_product_taxes?: [FixedProductTax];
+    discounts?: Discount[];
+    fixed_product_taxes?: FixedProductTax[];
     original_item_price: Money;
     original_row_total: Money;
     price: Money;

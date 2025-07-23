@@ -19,12 +19,12 @@ import { AppliedCoupon } from "./gql.appliedCoupon";
 export type Cart = {
     /** @deprecated */
     applied_coupon?: AppliedCoupon;
-    applied_coupons?: [AppliedCoupon];
-    applied_gift_cards?: [AppliedGiftCard];
+    applied_coupons?: AppliedCoupon[];
+    applied_gift_cards?: AppliedGiftCard[];
     applied_reward_points?: RewardPointsAmount;
     applied_store_credit?: AppliedStoreCredit;
-    available_gift_wrappings: [GiftWrapping];
-    available_payment_methods?: [AvailablePaymentMethod];
+    available_gift_wrappings: GiftWrapping[];
+    available_payment_methods?: AvailablePaymentMethod[];
     billing_address?: BillingCartAddress;
     email?: String;
     gift_message?: GiftMessage;
@@ -33,12 +33,12 @@ export type Cart = {
     id: ID;
     is_virtual: Boolean;
     /** @deprecated */
-    items?: [CartItemInterface];
+    items?: CartItemInterface[];
     itemsV2?: CartItems;
     prices?: CartPrices;
     printed_card_included: Boolean;
-    rules?: [CartRule];
+    rules?: CartRule[];
     selected_payment_method?: SelectedPaymentMethod;
-    shipping_addresses: [ShippingCartAddress];
+    shipping_addresses: ShippingCartAddress[];
     total_quantity: Float;
 };

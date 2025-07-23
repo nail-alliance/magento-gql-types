@@ -10,5 +10,5 @@ export type CustomizableMultipleOption = {
     sort_order?: Int;
     title?: String;
     uid: ID;
-    value?: [CustomizableMultipleValue];
+    value?: CustomizableMultipleValue[];
 };

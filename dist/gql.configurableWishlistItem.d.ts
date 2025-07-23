@@ -8,9 +8,9 @@ export type ConfigurableWishlistItem = {
     added_at: String;
     /** @deprecated */
     child_sku: String;
-    configurable_options?: [SelectedConfigurableOption];
+    configurable_options?: SelectedConfigurableOption[];
     configured_variant?: ProductInterface;
-    customizable_options: [SelectedCustomizableOption];
+    customizable_options: SelectedCustomizableOption[];
     description?: String;
     id: ID;
     product?: ProductInterface;

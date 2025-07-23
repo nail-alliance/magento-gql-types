@@ -10,14 +10,14 @@ import { CartItemInterface } from "./gql.cartItemInterface";
 import { CartItemQuantity } from "./gql.cartItemQuantity";
 import { AvailableShippingMethod } from "./gql.availableShippingMethod";
 export type ShippingCartAddress = {
-    available_shipping_methods?: [AvailableShippingMethod];
+    available_shipping_methods?: AvailableShippingMethod[];
     /** @deprecated */
-    cart_items?: [CartItemQuantity];
-    cart_items_v2?: [CartItemInterface];
+    cart_items?: CartItemQuantity[];
+    cart_items_v2?: CartItemInterface[];
     city: String;
     company?: String;
     country: CartAddressCountry;
-    custom_attributes: [AttributeValueInterface];
+    custom_attributes: AttributeValueInterface[];
     customer_notes?: String;
     fax?: String;
     firstname: String;
@@ -32,7 +32,7 @@ export type ShippingCartAddress = {
     region?: CartAddressRegion;
     same_as_billing: Boolean;
     selected_shipping_method?: SelectedShippingMethod;
-    street: [String];
+    street: String[];
     suffix?: String;
     telephone?: String;
     uid: String;

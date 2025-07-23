@@ -11,5 +11,5 @@ export type SelectedCustomizableOption = {
     label: String;
     sort_order: Int;
     type: String;
-    values: [SelectedCustomizableOptionValue];
+    values: SelectedCustomizableOptionValue[];
 };

@@ -4,9 +4,9 @@ import { CreditMemoItemInterface } from "./gql.creditMemoItemInterface";
 import { ID } from "./gql.ID";
 import { SalesCommentItem } from "./gql.salesCommentItem";
 export type CreditMemo = {
-    comments?: [SalesCommentItem];
+    comments?: SalesCommentItem[];
     id: ID;
-    items?: [CreditMemoItemInterface];
+    items?: CreditMemoItemInterface[];
     number: String;
     total?: CreditMemoTotal;
 };

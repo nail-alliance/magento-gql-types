@@ -6,12 +6,12 @@ import { ProductInterface } from "./gql.productInterface";
 import { LayerFilter } from "./gql.layerFilter";
 import { Aggregation } from "./gql.aggregation";
 export type Products = {
-    aggregations?: [Aggregation];
+    aggregations?: Aggregation[];
     /** @deprecated */
-    filters?: [LayerFilter];
-    items?: [ProductInterface];
+    filters?: LayerFilter[];
+    items?: ProductInterface[];
     page_info?: SearchResultPageInfo;
     sort_fields?: SortFields;
-    suggestions?: [SearchSuggestion];
+    suggestions?: SearchSuggestion[];
     total_count?: Int;
 };

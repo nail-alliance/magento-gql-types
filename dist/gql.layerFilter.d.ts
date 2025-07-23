@@ -3,7 +3,7 @@ import { Int } from "./gql.int";
 import { LayerFilterItemInterface } from "./gql.layerFilterItemInterface";
 export type LayerFilter = {
     /** @deprecated */
-    filter_items?: [LayerFilterItemInterface];
+    filter_items?: LayerFilterItemInterface[];
     /** @deprecated */
     filter_items_count?: Int;
     /** @deprecated */

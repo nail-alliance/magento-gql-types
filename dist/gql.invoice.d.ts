@@ -4,9 +4,9 @@ import { InvoiceItemInterface } from "./gql.invoiceItemInterface";
 import { ID } from "./gql.ID";
 import { SalesCommentItem } from "./gql.salesCommentItem";
 export type Invoice = {
-    comments?: [SalesCommentItem];
+    comments?: SalesCommentItem[];
     id: ID;
-    items?: [InvoiceItemInterface];
+    items?: InvoiceItemInterface[];
     number: String;
     total?: InvoiceTotal;
 };

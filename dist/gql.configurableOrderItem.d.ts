@@ -10,9 +10,9 @@ import { OrderItemOption } from "./gql.orderItemOption";
 import { Boolean } from "./gql.boolean";
 import { Discount } from "./gql.discount";
 export type ConfigurableOrderItem = {
-    discounts?: [Discount];
+    discounts?: Discount[];
     eligible_for_return?: Boolean;
-    entered_options?: [OrderItemOption];
+    entered_options?: OrderItemOption[];
     gift_message?: GiftMessage;
     gift_wrapping?: GiftWrapping;
     id: ID;
@@ -31,6 +31,6 @@ export type ConfigurableOrderItem = {
     quantity_return_requested?: Float;
     quantity_returned?: Float;
     quantity_shipped?: Float;
-    selected_options?: [OrderItemOption];
+    selected_options?: OrderItemOption[];
     status?: String;
 };

@@ -18,5 +18,5 @@ export type ConfigurableProductOptions = {
     product_id?: Int;
     uid: ID;
     use_default?: Boolean;
-    values?: [ConfigurableProductOptionsValues];
+    values?: ConfigurableProductOptionsValues[];
 };

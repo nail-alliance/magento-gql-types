@@ -1,6 +1,6 @@
 import { SimpleProduct } from "./gql.simpleProduct";
 import { ConfigurableAttributeOption } from "./gql.configurableAttributeOption";
 export type ConfigurableVariant = {
-    attributes?: [ConfigurableAttributeOption];
+    attributes?: ConfigurableAttributeOption[];
     product?: SimpleProduct;
 };

@@ -4,7 +4,7 @@ import { NegotiableQuoteAddressCountry } from "./gql.negotiableQuoteAddressCount
 import { String } from "./gql.string";
 import { AvailableShippingMethod } from "./gql.availableShippingMethod";
 export type NegotiableQuoteShippingAddress = {
-    available_shipping_methods?: [AvailableShippingMethod];
+    available_shipping_methods?: AvailableShippingMethod[];
     city: String;
     company?: String;
     country: NegotiableQuoteAddressCountry;
@@ -13,6 +13,6 @@ export type NegotiableQuoteShippingAddress = {
     postcode?: String;
     region?: NegotiableQuoteAddressRegion;
     selected_shipping_method?: SelectedShippingMethod;
-    street: [String];
+    street: String[];
     telephone?: String;
 };

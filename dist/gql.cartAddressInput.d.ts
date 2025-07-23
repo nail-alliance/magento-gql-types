@@ -6,7 +6,7 @@ export type CartAddressInput = {
     city: String;
     company?: String;
     country_code: String;
-    custom_attributes?: [AttributeValueInput];
+    custom_attributes?: AttributeValueInput[];
     fax?: String;
     firstname: String;
     lastname: String;
@@ -16,7 +16,7 @@ export type CartAddressInput = {
     region?: String;
     region_id?: Int;
     save_in_address_book?: Boolean;
-    street: [String];
+    street: String[];
     suffix?: String;
     telephone?: String;
     vat_id?: String;

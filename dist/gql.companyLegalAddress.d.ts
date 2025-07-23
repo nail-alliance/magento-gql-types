@@ -6,6 +6,6 @@ export type CompanyLegalAddress = {
     country_code?: CountryCodeEnum;
     postcode?: String;
     region?: CustomerAddressRegion;
-    street?: [String];
+    street?: String[];
     telephone?: String;
 };

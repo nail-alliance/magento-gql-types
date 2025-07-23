@@ -6,12 +6,12 @@ import { ID } from "./gql.ID";
 import { String } from "./gql.string";
 import { GiftRegistryDynamicAttributeInput } from "./gql.giftRegistryDynamicAttributeInput";
 export type CreateGiftRegistryInput = {
-    dynamic_attributes?: [GiftRegistryDynamicAttributeInput];
+    dynamic_attributes?: GiftRegistryDynamicAttributeInput[];
     event_name: String;
     gift_registry_type_uid: ID;
     message: String;
     privacy_settings: GiftRegistryPrivacySettings;
-    registrants: [AddGiftRegistryRegistrantInput];
+    registrants: AddGiftRegistryRegistrantInput[];
     shipping_address?: GiftRegistryShippingAddressInput;
     status: GiftRegistryStatus;
 };

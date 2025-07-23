@@ -18,15 +18,15 @@ import { OrderActionType } from "./gql.orderActionType";
 import { ApplyGiftCardToOrder } from "./gql.applyGiftCardToOrder";
 import { AppliedCoupon } from "./gql.appliedCoupon";
 export type CustomerOrder = {
-    applied_coupons: [AppliedCoupon];
-    applied_gift_cards?: [ApplyGiftCardToOrder];
-    available_actions: [OrderActionType];
+    applied_coupons: AppliedCoupon[];
+    applied_gift_cards?: ApplyGiftCardToOrder[];
+    available_actions: OrderActionType[];
     billing_address?: OrderAddress;
     carrier?: String;
-    comments?: [SalesCommentItem];
+    comments?: SalesCommentItem[];
     /** @deprecated */
     created_at?: String;
-    credit_memos?: [CreditMemo];
+    credit_memos?: CreditMemo[];
     customer_info: OrderCustomerInfo;
     email?: String;
     gift_message?: GiftMessage;
@@ -37,19 +37,19 @@ export type CustomerOrder = {
     id: ID;
     /** @deprecated */
     increment_id?: String;
-    invoices: [Invoice];
+    invoices: Invoice[];
     is_virtual: Boolean;
-    items?: [OrderItemInterface];
-    items_eligible_for_return?: [OrderItemInterface];
+    items?: OrderItemInterface[];
+    items_eligible_for_return?: OrderItemInterface[];
     number: String;
     order_date: String;
     /** @deprecated */
     order_number: String;
     order_status_change_date: String;
-    payment_methods?: [OrderPaymentMethod];
+    payment_methods?: OrderPaymentMethod[];
     printed_card_included: Boolean;
     returns?: Returns;
-    shipments?: [OrderShipment];
+    shipments?: OrderShipment[];
     shipping_address?: OrderAddress;
     shipping_method?: String;
     status: String;

@@ -3,8 +3,8 @@ import { Float } from "./gql.float";
 import { ID } from "./gql.ID";
 import { EnteredOptionInput } from "./gql.enteredOptionInput";
 export type UpdateRequisitionListItemsInput = {
-    entered_options?: [EnteredOptionInput];
+    entered_options?: EnteredOptionInput[];
     item_id: ID;
     quantity?: Float;
-    selected_options?: [String];
+    selected_options?: String[];
 };

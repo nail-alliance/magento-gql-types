@@ -3,8 +3,8 @@ import { ComparableItem } from "./gql.comparableItem";
 import { Int } from "./gql.int";
 import { ComparableAttribute } from "./gql.comparableAttribute";
 export type CompareList = {
-    attributes?: [ComparableAttribute];
+    attributes?: ComparableAttribute[];
     item_count: Int;
-    items?: [ComparableItem];
+    items?: ComparableItem[];
     uid: ID;
 };

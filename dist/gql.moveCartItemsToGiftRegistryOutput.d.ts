@@ -4,5 +4,5 @@ import { GiftRegistry } from "./gql.giftRegistry";
 export type MoveCartItemsToGiftRegistryOutput = {
     gift_registry?: GiftRegistry;
     status: Boolean;
-    user_errors: [GiftRegistryItemsUserError];
+    user_errors: GiftRegistryItemsUserError[];
 };

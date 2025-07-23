@@ -13,7 +13,7 @@ export type MediaGalleryEntry = {
     label?: String;
     media_type?: String;
     position?: Int;
-    types?: [String];
+    types?: String[];
     uid: ID;
     video_content?: ProductMediaGalleryEntriesVideoContent;
 };

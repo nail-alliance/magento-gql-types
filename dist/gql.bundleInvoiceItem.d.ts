@@ -6,8 +6,8 @@ import { ID } from "./gql.ID";
 import { Discount } from "./gql.discount";
 import { ItemSelectedBundleOption } from "./gql.itemSelectedBundleOption";
 export type BundleInvoiceItem = {
-    bundle_options?: [ItemSelectedBundleOption];
-    discounts?: [Discount];
+    bundle_options?: ItemSelectedBundleOption[];
+    discounts?: Discount[];
     id: ID;
     order_item?: OrderItemInterface;
     product_name?: String;

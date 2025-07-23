@@ -5,7 +5,7 @@ import { Discount } from "./gql.discount";
 import { Money } from "./gql.money";
 export type OrderTotal = {
     base_grand_total: Money;
-    discounts?: [Discount];
+    discounts?: Discount[];
     gift_options?: GiftOptionsPrices;
     grand_total: Money;
     shipping_handling?: ShippingHandling;
@@ -13,7 +13,7 @@ export type OrderTotal = {
     subtotal: Money;
     subtotal_excl_tax: Money;
     subtotal_incl_tax: Money;
-    taxes?: [TaxItem];
+    taxes?: TaxItem[];
     total_giftcard?: Money;
     total_reward_points?: Money;
     total_shipping: Money;

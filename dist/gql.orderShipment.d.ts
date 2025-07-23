@@ -4,9 +4,9 @@ import { ShipmentItemInterface } from "./gql.shipmentItemInterface";
 import { ID } from "./gql.ID";
 import { SalesCommentItem } from "./gql.salesCommentItem";
 export type OrderShipment = {
-    comments?: [SalesCommentItem];
+    comments?: SalesCommentItem[];
     id: ID;
-    items?: [ShipmentItemInterface];
+    items?: ShipmentItemInterface[];
     number: String;
-    tracking?: [ShipmentTracking];
+    tracking?: ShipmentTracking[];
 };

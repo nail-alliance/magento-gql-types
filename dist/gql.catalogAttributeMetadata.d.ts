@@ -7,7 +7,7 @@ import { String } from "./gql.string";
 import { ID } from "./gql.ID";
 import { CatalogAttributeApplyToEnum } from "./gql.catalogAttributeApplyToEnum";
 export type CatalogAttributeMetadata = {
-    apply_to?: [CatalogAttributeApplyToEnum];
+    apply_to?: CatalogAttributeApplyToEnum[];
     code: ID;
     default_value?: String;
     entity_type: AttributeEntityTypeEnum;
@@ -26,7 +26,7 @@ export type CatalogAttributeMetadata = {
     is_visible_on_front?: Boolean;
     is_wysiwyg_enabled?: Boolean;
     label?: String;
-    options: [CustomAttributeOptionInterface];
+    options: CustomAttributeOptionInterface[];
     swatch_input_type?: SwatchInputTypeEnum;
     update_product_preview_image?: Boolean;
     use_product_image_for_swatch?: Boolean;

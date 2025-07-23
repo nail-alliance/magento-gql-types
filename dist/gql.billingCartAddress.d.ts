@@ -7,7 +7,7 @@ export type BillingCartAddress = {
     city: String;
     company?: String;
     country: CartAddressCountry;
-    custom_attributes: [AttributeValueInterface];
+    custom_attributes: AttributeValueInterface[];
     /** @deprecated */
     customer_notes?: String;
     fax?: String;
@@ -18,7 +18,7 @@ export type BillingCartAddress = {
     postcode?: String;
     prefix?: String;
     region?: CartAddressRegion;
-    street: [String];
+    street: String[];
     suffix?: String;
     telephone?: String;
     uid: String;

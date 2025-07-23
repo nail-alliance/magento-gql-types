@@ -4,7 +4,7 @@ import { RewardPointsBalanceHistoryItem } from "./gql.rewardPointsBalanceHistory
 import { RewardPointsAmount } from "./gql.rewardPointsAmount";
 export type RewardPoints = {
     balance?: RewardPointsAmount;
-    balance_history?: [RewardPointsBalanceHistoryItem];
+    balance_history?: RewardPointsBalanceHistoryItem[];
     exchange_rates?: RewardPointsExchangeRates;
     subscription_status?: RewardPointsSubscriptionStatus;
 };

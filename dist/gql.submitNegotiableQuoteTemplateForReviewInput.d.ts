@@ -7,6 +7,6 @@ export type SubmitNegotiableQuoteTemplateForReviewInput = {
     max_order_commitment?: Int;
     min_order_commitment?: Int;
     name?: String;
-    reference_document_links?: [NegotiableQuoteTemplateReferenceDocumentLinkInput];
+    reference_document_links?: NegotiableQuoteTemplateReferenceDocumentLinkInput[];
     template_id: ID;
 };

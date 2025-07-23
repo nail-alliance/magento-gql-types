@@ -10,5 +10,5 @@ export type CustomizableDropDownOption = {
     sort_order?: Int;
     title?: String;
     uid: ID;
-    value?: [CustomizableDropDownValue];
+    value?: CustomizableDropDownValue[];
 };

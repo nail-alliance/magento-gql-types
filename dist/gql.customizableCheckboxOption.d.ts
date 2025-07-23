@@ -10,5 +10,5 @@ export type CustomizableCheckboxOption = {
     sort_order?: Int;
     title?: String;
     uid: ID;
-    value?: [CustomizableCheckboxValue];
+    value?: CustomizableCheckboxValue[];
 };

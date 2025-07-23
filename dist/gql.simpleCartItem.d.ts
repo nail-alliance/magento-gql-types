@@ -11,10 +11,10 @@ import { Discount } from "./gql.discount";
 import { SelectedCustomizableOption } from "./gql.selectedCustomizableOption";
 import { GiftWrapping } from "./gql.giftWrapping";
 export type SimpleCartItem = {
-    available_gift_wrapping: [GiftWrapping];
-    customizable_options: [SelectedCustomizableOption];
-    discount?: [Discount];
-    errors?: [CartItemError];
+    available_gift_wrapping: GiftWrapping[];
+    customizable_options: SelectedCustomizableOption[];
+    discount?: Discount[];
+    errors?: CartItemError[];
     gift_message?: GiftMessage;
     gift_wrapping?: GiftWrapping;
     /** @deprecated */
@@ -23,8 +23,8 @@ export type SimpleCartItem = {
     max_qty?: Float;
     min_qty?: Float;
     not_available_message?: String;
-    note_from_buyer?: [ItemNote];
-    note_from_seller?: [ItemNote];
+    note_from_buyer?: ItemNote[];
+    note_from_seller?: ItemNote[];
     prices?: CartItemPrices;
     product: ProductInterface;
     quantity: Float;

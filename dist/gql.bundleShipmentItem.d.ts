@@ -5,7 +5,7 @@ import { OrderItemInterface } from "./gql.orderItemInterface";
 import { ID } from "./gql.ID";
 import { ItemSelectedBundleOption } from "./gql.itemSelectedBundleOption";
 export type BundleShipmentItem = {
-    bundle_options?: [ItemSelectedBundleOption];
+    bundle_options?: ItemSelectedBundleOption[];
     id: ID;
     order_item?: OrderItemInterface;
     product_name?: String;

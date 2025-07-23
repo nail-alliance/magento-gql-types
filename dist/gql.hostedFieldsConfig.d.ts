@@ -10,7 +10,7 @@ export type HostedFieldsConfig = {
     payment_intent?: String;
     payment_source?: String;
     requires_card_details?: Boolean;
-    sdk_params?: [SDKParams];
+    sdk_params?: SDKParams[];
     sort_order?: String;
     /** @deprecated */
     three_ds?: Boolean;

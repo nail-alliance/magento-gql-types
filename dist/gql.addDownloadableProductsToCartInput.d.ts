@@ -2,5 +2,5 @@ import { DownloadableProductCartItemInput } from "./gql.downloadableProductCartI
 import { String } from "./gql.string";
 export type AddDownloadableProductsToCartInput = {
     cart_id: String;
-    cart_items: [DownloadableProductCartItemInput];
+    cart_items: DownloadableProductCartItemInput[];
 };

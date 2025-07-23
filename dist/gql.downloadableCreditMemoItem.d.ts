@@ -6,8 +6,8 @@ import { ID } from "./gql.ID";
 import { DownloadableItemsLinks } from "./gql.downloadableItemsLinks";
 import { Discount } from "./gql.discount";
 export type DownloadableCreditMemoItem = {
-    discounts?: [Discount];
-    downloadable_links?: [DownloadableItemsLinks];
+    discounts?: Discount[];
+    downloadable_links?: DownloadableItemsLinks[];
     id: ID;
     order_item?: OrderItemInterface;
     product_name?: String;

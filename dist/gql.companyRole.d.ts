@@ -5,6 +5,6 @@ import { ID } from "./gql.ID";
 export type CompanyRole = {
     id: ID;
     name?: String;
-    permissions?: [CompanyAclResource];
+    permissions?: CompanyAclResource[];
     users_count?: Int;
 };

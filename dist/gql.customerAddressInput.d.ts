@@ -9,8 +9,8 @@ export type CustomerAddressInput = {
     company?: String;
     country_code?: CountryCodeEnum;
     country_id?: CountryCodeEnum;
-    custom_attributes?: [CustomerAddressAttributeInput];
-    custom_attributesV2?: [AttributeValueInput];
+    custom_attributes?: CustomerAddressAttributeInput[];
+    custom_attributesV2?: AttributeValueInput[];
     default_billing?: Boolean;
     default_shipping?: Boolean;
     fax?: String;
@@ -20,7 +20,7 @@ export type CustomerAddressInput = {
     postcode?: String;
     prefix?: String;
     region?: CustomerAddressRegionInput;
-    street?: [String];
+    street?: String[];
     suffix?: String;
     telephone?: String;
     vat_id?: String;

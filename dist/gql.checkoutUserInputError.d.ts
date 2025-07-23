@@ -3,5 +3,5 @@ import { CheckoutUserInputErrorCodes } from "./gql.checkoutUserInputErrorCodes";
 export type CheckoutUserInputError = {
     code: CheckoutUserInputErrorCodes;
     message: String;
-    path: [String];
+    path: String[];
 };

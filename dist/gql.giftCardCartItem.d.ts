@@ -13,10 +13,10 @@ import { GiftWrapping } from "./gql.giftWrapping";
 import { Money } from "./gql.money";
 export type GiftCardCartItem = {
     amount: Money;
-    available_gift_wrapping: [GiftWrapping];
-    customizable_options: [SelectedCustomizableOption];
-    discount?: [Discount];
-    errors?: [CartItemError];
+    available_gift_wrapping: GiftWrapping[];
+    customizable_options: SelectedCustomizableOption[];
+    discount?: Discount[];
+    errors?: CartItemError[];
     gift_message?: GiftMessage;
     gift_wrapping?: GiftWrapping;
     /** @deprecated */
@@ -26,8 +26,8 @@ export type GiftCardCartItem = {
     message?: String;
     min_qty?: Float;
     not_available_message?: String;
-    note_from_buyer?: [ItemNote];
-    note_from_seller?: [ItemNote];
+    note_from_buyer?: ItemNote[];
+    note_from_seller?: ItemNote[];
     prices?: CartItemPrices;
     product: ProductInterface;
     quantity: Float;

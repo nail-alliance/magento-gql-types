@@ -5,10 +5,10 @@ import { ProductInterface } from "./gql.productInterface";
 import { DownloadableProductLinks } from "./gql.downloadableProductLinks";
 import { SelectedCustomizableOption } from "./gql.selectedCustomizableOption";
 export type DownloadableRequisitionListItem = {
-    customizable_options: [SelectedCustomizableOption];
-    links?: [DownloadableProductLinks];
+    customizable_options: SelectedCustomizableOption[];
+    links?: DownloadableProductLinks[];
     product: ProductInterface;
     quantity: Float;
-    samples?: [DownloadableProductSamples];
+    samples?: DownloadableProductSamples[];
     uid: ID;
 };
