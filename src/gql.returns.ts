@@ -1,8 +1,8 @@
-import {Return} from "./gql.return";
+import {Int} from "./gql.int";
 import {SearchResultPageInfo} from "./gql.searchResultPageInfo";
-
+import {Return} from "./gql.return";
 export type Returns = {
-    "items"?: Return[] | null | undefined
-    "page_info"?: SearchResultPageInfo | null | undefined
-    "total_count"?: number | null | undefined
+	items?: [Return] // A list of return requests.
+	page_info?: SearchResultPageInfo // Pagination metadata.
+	total_count?: Int // The total number of return requests.
 }

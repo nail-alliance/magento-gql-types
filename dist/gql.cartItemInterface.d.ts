@@ -1,22 +1,25 @@
-import { Discount } from "./gql.discount";
-import { CartItemError } from "./gql.cartItemError";
-import { ItemNote } from "./gql.itemNote";
-import { CartItemPrices } from "./gql.cartItemPrices";
-import { ProductInterface } from "./gql.productInterface";
 import { ID } from "./gql.ID";
+import { ProductInterface } from "./gql.productInterface";
+import { CartItemPrices } from "./gql.cartItemPrices";
+import { ItemNote } from "./gql.itemNote";
+import { Float } from "./gql.float";
+import { Boolean } from "./gql.boolean";
+import { String } from "./gql.string";
+import { CartItemError } from "./gql.cartItemError";
+import { Discount } from "./gql.discount";
 export interface CartItemInterface {
-    "discount"?: Discount[] | null | undefined;
-    "errors"?: CartItemError[] | null | undefined;
+    discount?: [Discount];
+    errors?: [CartItemError];
     /** @deprecated */
-    "id": string;
-    "is_available": boolean;
-    "max_qty"?: number | null | undefined;
-    "min_qty"?: number | null | undefined;
-    "not_available_message": string;
-    "note_from_buyer"?: ItemNote[] | null | undefined;
-    "note_from_seller"?: ItemNote[] | null | undefined;
-    "prices"?: CartItemPrices | null | undefined;
-    "product": ProductInterface;
-    "quantity": number;
-    "uid": ID;
+    id: String;
+    is_available: Boolean;
+    max_qty?: Float;
+    min_qty?: Float;
+    not_available_message?: String;
+    note_from_buyer?: [ItemNote];
+    note_from_seller?: [ItemNote];
+    prices?: CartItemPrices;
+    product: ProductInterface;
+    quantity: Float;
+    uid: ID;
 }

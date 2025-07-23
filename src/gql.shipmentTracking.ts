@@ -1,5 +1,6 @@
+import {String} from "./gql.string";
 export type ShipmentTracking = {
-    "carrier": string
-    "number"?: string | null | undefined
-    "title": string
+	carrier: String // The shipping carrier for the order delivery.
+	number?: String // The tracking number of the order shipment.
+	title: String // The shipment tracking title.
 }

@@ -2,9 +2,9 @@ import { Price } from "./gql.price";
 /** @deprecated */
 export type ProductPrices = {
     /** @deprecated */
-    "maximalPrice": Price;
+    maximalPrice?: Price;
     /** @deprecated */
-    "minimalPrice": Price;
+    minimalPrice?: Price;
     /** @deprecated */
-    "regularPrice": Price;
+    regularPrice?: Price;
 };

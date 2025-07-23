@@ -1,0 +1,23 @@
+import { Boolean } from "./gql.boolean";
+import { Int } from "./gql.int";
+import { AttributeValueInput } from "./gql.attributeValueInput";
+import { String } from "./gql.string";
+export type CartAddressInput = {
+    city: String;
+    company?: String;
+    country_code: String;
+    custom_attributes?: [AttributeValueInput];
+    fax?: String;
+    firstname: String;
+    lastname: String;
+    middlename?: String;
+    postcode?: String;
+    prefix?: String;
+    region?: String;
+    region_id?: Int;
+    save_in_address_book?: Boolean;
+    street: [String];
+    suffix?: String;
+    telephone?: String;
+    vat_id?: String;
+};

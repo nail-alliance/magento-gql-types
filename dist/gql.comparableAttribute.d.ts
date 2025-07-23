@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type ComparableAttribute = {
-    "code": string;
-    "label": string;
+    code: String;
+    label: String;
 };

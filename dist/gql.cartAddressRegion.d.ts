@@ -1,5 +1,7 @@
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
 export type CartAddressRegion = {
-    "code"?: string | null | undefined;
-    "label"?: string | null | undefined;
-    "region_id"?: number | null | undefined;
+    code?: String;
+    label?: String;
+    region_id?: Int;
 };

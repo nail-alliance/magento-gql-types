@@ -1,7 +1,8 @@
 import { ID } from "./gql.ID";
+import { String } from "./gql.string";
 export type CompanyTeam = {
-    "description"?: string | null | undefined;
-    "id": ID;
-    "name"?: string | null | undefined;
-    "structure_id": ID;
+    description?: String;
+    id: ID;
+    name?: String;
+    structure_id: ID;
 };

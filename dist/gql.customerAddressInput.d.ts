@@ -1,0 +1,27 @@
+import { CustomerAddressRegionInput } from "./gql.customerAddressRegionInput";
+import { Boolean } from "./gql.boolean";
+import { AttributeValueInput } from "./gql.attributeValueInput";
+import { CustomerAddressAttributeInput } from "./gql.customerAddressAttributeInput";
+import { CountryCodeEnum } from "./gql.countryCodeEnum";
+import { String } from "./gql.string";
+export type CustomerAddressInput = {
+    city?: String;
+    company?: String;
+    country_code?: CountryCodeEnum;
+    country_id?: CountryCodeEnum;
+    custom_attributes?: [CustomerAddressAttributeInput];
+    custom_attributesV2?: [AttributeValueInput];
+    default_billing?: Boolean;
+    default_shipping?: Boolean;
+    fax?: String;
+    firstname?: String;
+    lastname?: String;
+    middlename?: String;
+    postcode?: String;
+    prefix?: String;
+    region?: CustomerAddressRegionInput;
+    street?: [String];
+    suffix?: String;
+    telephone?: String;
+    vat_id?: String;
+};

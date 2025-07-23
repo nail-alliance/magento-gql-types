@@ -1,8 +1,9 @@
+import { String } from "./gql.string";
 export type ProductMediaGalleryEntriesVideoContent = {
-    "media_type"?: string | null | undefined;
-    "video_description"?: string | null | undefined;
-    "video_metadata"?: string | null | undefined;
-    "video_provider"?: string | null | undefined;
-    "video_title"?: string | null | undefined;
-    "video_url"?: string | null | undefined;
+    media_type?: String;
+    video_description?: String;
+    video_metadata?: String;
+    video_provider?: String;
+    video_title?: String;
+    video_url?: String;
 };

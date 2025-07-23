@@ -1,13 +1,15 @@
+import { Float } from "./gql.float";
+import { String } from "./gql.string";
 /** @deprecated */
 export type ProductTierPrices = {
     /** @deprecated */
-    "customer_group_id"?: string | null | undefined;
+    customer_group_id?: String;
     /** @deprecated */
-    "percentage_value"?: number | null | undefined;
+    percentage_value?: Float;
     /** @deprecated */
-    "qty"?: number | null | undefined;
+    qty?: Float;
     /** @deprecated */
-    "value"?: number | null | undefined;
+    value?: Float;
     /** @deprecated */
-    "website_id"?: number | null | undefined;
+    website_id?: Float;
 };

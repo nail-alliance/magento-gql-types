@@ -1,7 +1,9 @@
+import { Float } from "./gql.float";
+import { String } from "./gql.string";
 import { RewardPointsAmount } from "./gql.rewardPointsAmount";
 export type RewardPointsBalanceHistoryItem = {
-    "balance"?: RewardPointsAmount | null | undefined;
-    "change_reason": string;
-    "date": string;
-    "points_change": number;
+    balance?: RewardPointsAmount;
+    change_reason: String;
+    date: String;
+    points_change: Float;
 };

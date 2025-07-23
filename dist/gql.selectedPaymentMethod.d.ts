@@ -1,5 +1,6 @@
+import { String } from "./gql.string";
 export type SelectedPaymentMethod = {
-    "code"?: string | null | undefined;
-    "purchase_order_number": string;
-    "title"?: string | null | undefined;
+    code: String;
+    purchase_order_number?: String;
+    title: String;
 };

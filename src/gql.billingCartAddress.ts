@@ -1,26 +1,26 @@
-import {CartAddressCountry} from "./gql.cartAddressCountry";
-import {AttributeValueInterface} from "./gql.attributeValueInterface";
-import {ID} from "./gql.ID";
 import {CartAddressRegion} from "./gql.cartAddressRegion";
-
+import {Int} from "./gql.int";
+import {AttributeValueInterface} from "./gql.attributeValueInterface";
+import {CartAddressCountry} from "./gql.cartAddressCountry";
+import {String} from "./gql.string";
 export type BillingCartAddress = {
-    "city": string
-    "company"?: string | null | undefined
-    "country": CartAddressCountry
-    "custom_attributes": AttributeValueInterface[]
-    /** @deprecated */
-    "customer_notes"?: string | null | undefined
-    "fax"?: string | null | undefined
-    "firstname": string
-    "id": ID
-    "lastname": string
-    "middlename"?: string | null | undefined
-    "postcode"?: string | null | undefined
-    "prefix"?: string | null | undefined
-    "region"?: CartAddressRegion | null | undefined
-    "street": string[]
-    "suffix"?: string | null | undefined
-    "telephone"?: string | null | undefined
-    "uid": string
-    "vat_id": string
+	city: String // The city specified for the billing or shipping address.
+	company?: String // The company specified for the billing or shipping address.
+	country: CartAddressCountry // An object containing the country label and code.
+	custom_attributes: [AttributeValueInterface] // The custom attribute values of the billing or shipping address.
+	/** @deprecated */
+	customer_notes?: String // Deprecated The field is used only in shipping address.
+	fax?: String // The customer's fax number.
+	firstname: String // The first name of the customer or guest.
+	id?: Int // Id of the customer address.
+	lastname: String // The last name of the customer or guest.
+	middlename?: String // The middle name of the person associated with the billing/shipping address.
+	postcode?: String // The ZIP or postal code of the billing or shipping address.
+	prefix?: String // An honorific, such as Dr., Mr., or Mrs.
+	region?: CartAddressRegion // An object containing the region label and code.
+	street: [String] // An array containing the street for the billing or shipping address.
+	suffix?: String // A value such as Sr., Jr., or III.
+	telephone?: String // The telephone number for the billing or shipping address.
+	uid: String // The unique id of the customer address.
+	vat_id?: String // The VAT company number for billing or shipping address.
 }

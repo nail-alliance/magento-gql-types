@@ -1,5 +1,6 @@
+import {String} from "./gql.string";
 export type GiftMessage = {
-    "from": string;
-    "message": string;
-    "to": string;
+	from: String // Sender name
+	message: String // Gift message text
+	to: String // Recipient name
 }

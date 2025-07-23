@@ -1,0 +1,9 @@
+export declare enum CatalogAttributeApplyToEnum {
+    SIMPLE = "SIMPLE",
+    VIRTUAL = "VIRTUAL",
+    BUNDLE = "BUNDLE",
+    DOWNLOADABLE = "DOWNLOADABLE",
+    CONFIGURABLE = "CONFIGURABLE",
+    GROUPED = "GROUPED",
+    CATEGORY = "CATEGORY"
+}

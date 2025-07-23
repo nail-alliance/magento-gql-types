@@ -1,6 +1,6 @@
-import { ProductReview } from "./gql.productReview";
 import { SearchResultPageInfo } from "./gql.searchResultPageInfo";
+import { ProductReview } from "./gql.productReview";
 export type ProductReviews = {
-    "items": ProductReview[];
-    "page_info": SearchResultPageInfo;
+    items: [ProductReview];
+    page_info: SearchResultPageInfo;
 };

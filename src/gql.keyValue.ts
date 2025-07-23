@@ -1,4 +1,5 @@
+import {String} from "./gql.string";
 export type KeyValue = {
-    "name"?: string | null | undefined
-    "value"?: string | null | undefined
+	name?: String // The name part of the key/value pair.
+	value?: String // The value part of the key/value pair.
 }

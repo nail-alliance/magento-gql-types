@@ -1,5 +1,7 @@
+import { Boolean } from "./gql.boolean";
+import { String } from "./gql.string";
 export type AvailablePaymentMethod = {
-    "code": string;
-    "is_deferred": boolean;
-    "title": string;
+    code: String;
+    is_deferred: Boolean;
+    title: String;
 };

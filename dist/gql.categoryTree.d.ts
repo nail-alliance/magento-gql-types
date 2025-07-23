@@ -1,0 +1,51 @@
+import { ID } from "./gql.ID";
+import { UrlRewriteEntityTypeEnum } from "./gql.urlRewriteEntityTypeEnum";
+import { Boolean } from "./gql.boolean";
+import { CategoryProducts } from "./gql.categoryProducts";
+import { Int } from "./gql.int";
+import { Float } from "./gql.float";
+import { CmsBlock } from "./gql.cmsBlock";
+import { Breadcrumb } from "./gql.breadcrumb";
+import { String } from "./gql.string";
+export type CategoryTree = {
+    automatic_sorting?: String;
+    available_sort_by?: [String];
+    breadcrumbs?: [Breadcrumb];
+    canonical_url?: String;
+    children?: [CategoryTree];
+    children_count?: String;
+    cms_block?: CmsBlock;
+    /** @deprecated */
+    created_at?: String;
+    custom_layout_update_file?: String;
+    default_sort_by?: String;
+    description?: String;
+    display_mode?: String;
+    filter_price_range?: Float;
+    /** @deprecated */
+    id?: Int;
+    image?: String;
+    include_in_menu?: Int;
+    is_anchor?: Int;
+    landing_page?: Int;
+    level?: Int;
+    meta_description?: String;
+    meta_keywords?: String;
+    meta_title?: String;
+    name?: String;
+    path?: String;
+    path_in_store?: String;
+    position?: Int;
+    product_count?: Int;
+    products?: CategoryProducts;
+    redirect_code: Int;
+    relative_url?: String;
+    staged: Boolean;
+    type?: UrlRewriteEntityTypeEnum;
+    uid: ID;
+    /** @deprecated */
+    updated_at?: String;
+    url_key?: String;
+    url_path?: String;
+    url_suffix?: String;
+};

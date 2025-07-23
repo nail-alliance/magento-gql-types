@@ -1,16 +1,16 @@
-import {ReturnCustomAttribute} from "./gql.returnCustomAttribute";
-import {AttributeValueInterface} from "./gql.attributeValueInterface";
-import {ReturnItemStatus} from "./gql.returnItemStatus";
 import {ID} from "./gql.ID";
-
+import {ReturnItemStatus} from "./gql.returnItemStatus";
+import {Float} from "./gql.float";
 import {OrderItemInterface} from "./gql.orderItemInterface";
-
+import {AttributeValueInterface} from "./gql.attributeValueInterface";
+import {ReturnCustomAttribute} from "./gql.returnCustomAttribute";
 export type ReturnItem = {
-    "custom_attributes"?: ReturnCustomAttribute[] | null | undefined
-    "custom_attributesV2"?: AttributeValueInterface[] | null | undefined
-    "order_item": OrderItemInterface
-    "quantity": number
-    "request_quantity": number
-    "status": ReturnItemStatus
-    "uid": ID
+	/** @deprecated */
+	custom_attributes?: [ReturnCustomAttribute] // Return item custom attributes that are visible on the storefront. Use custom_attributesV2 instead. Deprecated
+	custom_attributesV2?: [AttributeValueInterface] // Custom attributes that are visible on the storefront.
+	order_item: OrderItemInterface // Provides access to the product being returned, including information about selected and entered options.
+	quantity: Float // The quantity of the item the merchant authorized to be returned.
+	request_quantity: Float // The quantity of the item requested to be returned.
+	status: ReturnItemStatus // The return status of the item.
+	uid: ID // The unique ID for a ReturnItem object.
 }

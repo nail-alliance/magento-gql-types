@@ -1,0 +1,22 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.AttributeFrontendInputEnum = void 0;
+var AttributeFrontendInputEnum;
+(function (AttributeFrontendInputEnum) {
+    AttributeFrontendInputEnum["BOOLEAN"] = "BOOLEAN";
+    AttributeFrontendInputEnum["DATE"] = "DATE";
+    AttributeFrontendInputEnum["DATETIME"] = "DATETIME";
+    AttributeFrontendInputEnum["FILE"] = "FILE";
+    AttributeFrontendInputEnum["GALLERY"] = "GALLERY";
+    AttributeFrontendInputEnum["HIDDEN"] = "HIDDEN";
+    AttributeFrontendInputEnum["IMAGE"] = "IMAGE";
+    AttributeFrontendInputEnum["MEDIA_IMAGE"] = "MEDIA_IMAGE";
+    AttributeFrontendInputEnum["MULTILINE"] = "MULTILINE";
+    AttributeFrontendInputEnum["MULTISELECT"] = "MULTISELECT";
+    AttributeFrontendInputEnum["PRICE"] = "PRICE";
+    AttributeFrontendInputEnum["SELECT"] = "SELECT";
+    AttributeFrontendInputEnum["TEXT"] = "TEXT";
+    AttributeFrontendInputEnum["TEXTAREA"] = "TEXTAREA";
+    AttributeFrontendInputEnum["WEIGHT"] = "WEIGHT";
+    AttributeFrontendInputEnum["UNDEFINED"] = "UNDEFINED";
+})(AttributeFrontendInputEnum || (exports.AttributeFrontendInputEnum = AttributeFrontendInputEnum = {}));

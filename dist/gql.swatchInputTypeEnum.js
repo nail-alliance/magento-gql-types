@@ -1,0 +1,24 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SwatchInputTypeEnum = void 0;
+var SwatchInputTypeEnum;
+(function (SwatchInputTypeEnum) {
+    SwatchInputTypeEnum["BOOLEAN"] = "BOOLEAN";
+    SwatchInputTypeEnum["DATE"] = "DATE";
+    SwatchInputTypeEnum["DATETIME"] = "DATETIME";
+    SwatchInputTypeEnum["DROPDOWN"] = "DROPDOWN";
+    SwatchInputTypeEnum["FILE"] = "FILE";
+    SwatchInputTypeEnum["GALLERY"] = "GALLERY";
+    SwatchInputTypeEnum["HIDDEN"] = "HIDDEN";
+    SwatchInputTypeEnum["IMAGE"] = "IMAGE";
+    SwatchInputTypeEnum["MEDIA_IMAGE"] = "MEDIA_IMAGE";
+    SwatchInputTypeEnum["MULTILINE"] = "MULTILINE";
+    SwatchInputTypeEnum["MULTISELECT"] = "MULTISELECT";
+    SwatchInputTypeEnum["PRICE"] = "PRICE";
+    SwatchInputTypeEnum["SELECT"] = "SELECT";
+    SwatchInputTypeEnum["TEXT"] = "TEXT";
+    SwatchInputTypeEnum["TEXTAREA"] = "TEXTAREA";
+    SwatchInputTypeEnum["UNDEFINED"] = "UNDEFINED";
+    SwatchInputTypeEnum["VISUAL"] = "VISUAL";
+    SwatchInputTypeEnum["WEIGHT"] = "WEIGHT";
+})(SwatchInputTypeEnum || (exports.SwatchInputTypeEnum = SwatchInputTypeEnum = {}));

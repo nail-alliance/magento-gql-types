@@ -1,4 +1,4 @@
 export enum GiftRegistryStatus {
-    ACTIVE = "ACTIVE",
-    INACTIVE = "INACTIVE",
+	ACTIVE = "ACTIVE",
+	INACTIVE = "INACTIVE",
 }

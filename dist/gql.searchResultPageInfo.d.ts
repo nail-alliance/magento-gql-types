@@ -1,5 +1,6 @@
+import { Int } from "./gql.int";
 export type SearchResultPageInfo = {
-    "current_page"?: number | null | undefined;
-    "page_size"?: number | null | undefined;
-    "total_pages"?: number | null | undefined;
+    current_page?: Int;
+    page_size?: Int;
+    total_pages?: Int;
 };

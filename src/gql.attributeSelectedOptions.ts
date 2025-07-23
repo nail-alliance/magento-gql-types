@@ -1,6 +1,6 @@
-import {AttributeValueInterface} from "./gql.attributeValueInterface";
 import {AttributeSelectedOptionInterface} from "./gql.attributeSelectedOptionInterface";
-
-export type AttributeSelectedOptions = AttributeValueInterface & {
-    "selected_options": AttributeSelectedOptionInterface[];
+import {ID} from "./gql.ID";
+export type AttributeSelectedOptions = {
+	code: ID // The attribute code.
+	selected_options: [AttributeSelectedOptionInterface] // 
 }

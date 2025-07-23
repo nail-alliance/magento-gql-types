@@ -1,6 +1,6 @@
-import { ReturnShippingAddress } from "./gql.returnShippingAddress";
 import { ReturnShippingTracking } from "./gql.returnShippingTracking";
+import { ReturnShippingAddress } from "./gql.returnShippingAddress";
 export type ReturnShipping = {
-    "address"?: ReturnShippingAddress | null | undefined;
-    "tracking"?: ReturnShippingTracking[] | null | undefined;
+    address?: ReturnShippingAddress;
+    tracking?: [ReturnShippingTracking];
 };

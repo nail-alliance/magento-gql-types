@@ -1,4 +1,5 @@
+import { Float } from "./gql.float";
 export type ProductDiscount = {
-    "amount_off": number;
-    "percent_off": number;
+    amount_off?: Float;
+    percent_off?: Float;
 };

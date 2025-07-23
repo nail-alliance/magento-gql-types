@@ -1,9 +1,10 @@
 import { ID } from "./gql.ID";
-import { ComparableAttribute } from "./gql.comparableAttribute";
 import { ComparableItem } from "./gql.comparableItem";
+import { Int } from "./gql.int";
+import { ComparableAttribute } from "./gql.comparableAttribute";
 export type CompareList = {
-    "attributes"?: ComparableAttribute[] | null | undefined;
-    "item_count": number;
-    "items"?: ComparableItem[] | null | undefined;
-    "uid": ID;
+    attributes?: [ComparableAttribute];
+    item_count: Int;
+    items?: [ComparableItem];
+    uid: ID;
 };

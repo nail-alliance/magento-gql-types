@@ -1,5 +1,4 @@
-/** @deprecated */
 export enum PriceAdjustmentDescriptionEnum {
-    INCLUDED = "INCLUDED",
-    EXCLUDED = "EXCLUDED",
+	INCLUDED = "INCLUDED",
+	EXCLUDED = "EXCLUDED",
 }

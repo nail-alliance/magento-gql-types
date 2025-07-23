@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type ProductAttribute = {
-    "code": string;
-    "value": string;
+    code: String;
+    value: String;
 };

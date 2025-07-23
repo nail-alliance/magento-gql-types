@@ -1,23 +1,25 @@
-import {Discount} from "./gql.discount";
-import {CartItemError} from "./gql.cartItemError";
-import {ItemNote} from "./gql.itemNote";
-import {CartItemPrices} from "./gql.cartItemPrices";
-import {ProductInterface} from "./gql.productInterface";
 import {ID} from "./gql.ID";
-
+import {ProductInterface} from "./gql.productInterface";
+import {CartItemPrices} from "./gql.cartItemPrices";
+import {ItemNote} from "./gql.itemNote";
+import {Float} from "./gql.float";
+import {Boolean} from "./gql.boolean";
+import {String} from "./gql.string";
+import {CartItemError} from "./gql.cartItemError";
+import {Discount} from "./gql.discount";
 export interface CartItemInterface {
-    "discount"?: Discount[] | null | undefined
-    "errors"?: CartItemError[] | null | undefined
-    /** @deprecated */
-    "id": string;
-    "is_available": boolean;
-    "max_qty"?: number | null | undefined
-    "min_qty"?: number | null | undefined
-    "not_available_message": string;
-    "note_from_buyer"?: ItemNote[] | null | undefined
-    "note_from_seller"?: ItemNote[] | null | undefined
-    "prices"?: CartItemPrices | null | undefined
-    "product": ProductInterface;
-    "quantity": number;
-    "uid": ID;
+	discount?: [Discount] // Contains discount for quote line item.
+	errors?: [CartItemError] // An array of errors encountered while loading the cart item
+	/** @deprecated */
+	id: String // Use uid instead. Deprecated
+	is_available: Boolean // True if requested quantity is less than available stock, false otherwise.
+	max_qty?: Float // Line item max qty in quote template
+	min_qty?: Float // Line item min qty in quote template
+	not_available_message?: String // Message to display when the product is not available with this selected option.
+	note_from_buyer?: [ItemNote] // The buyer's quote line item note.
+	note_from_seller?: [ItemNote] // The seller's quote line item note.
+	prices?: CartItemPrices // Contains details about the price of the item, including taxes and discounts.
+	product: ProductInterface // Details about an item in the cart.
+	quantity: Float // The quantity of this item in the cart.
+	uid: ID // The unique ID for a CartItemInterface object.
 }

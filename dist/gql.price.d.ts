@@ -3,7 +3,7 @@ import { PriceAdjustment } from "./gql.priceAdjustment";
 /** @deprecated */
 export type Price = {
     /** @deprecated */
-    "adjustments": PriceAdjustment[];
+    adjustments?: [PriceAdjustment];
     /** @deprecated */
-    "amount": Money;
+    amount?: Money;
 };

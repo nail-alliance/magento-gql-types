@@ -1,5 +1,6 @@
 import { ID } from "./gql.ID";
+import { String } from "./gql.string";
 export type ReturnShippingCarrier = {
-    "label": number;
-    "uid": ID;
+    label: String;
+    uid: ID;
 };

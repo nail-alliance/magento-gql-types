@@ -1,11 +1,13 @@
-import { ID } from "./gql.ID";
+import { Float } from "./gql.float";
 import { Money } from "./gql.money";
+import { String } from "./gql.string";
 import { OrderItemInterface } from "./gql.orderItemInterface";
+import { ID } from "./gql.ID";
 export interface ShipmentItemInterface {
-    "id": ID;
-    "order_item"?: OrderItemInterface | null | undefined;
-    "product_name"?: string | null | undefined;
-    "product_sale_price": Money;
-    "product_sku": string;
-    "quantity_shipped": number;
+    id: ID;
+    order_item?: OrderItemInterface;
+    product_name?: String;
+    product_sale_price: Money;
+    product_sku: String;
+    quantity_shipped: Float;
 }

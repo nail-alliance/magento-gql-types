@@ -1,13 +1,15 @@
-import { Discount } from "./gql.discount";
-import { ID } from "./gql.ID";
-import { OrderItemInterface } from "./gql.orderItemInterface";
+import { Float } from "./gql.float";
 import { Money } from "./gql.money";
+import { String } from "./gql.string";
+import { OrderItemInterface } from "./gql.orderItemInterface";
+import { ID } from "./gql.ID";
+import { Discount } from "./gql.discount";
 export interface CreditMemoItemInterface {
-    "discounts"?: Discount[] | null | undefined;
-    "id": ID;
-    "order_item"?: OrderItemInterface | null | undefined;
-    "product_name"?: string | null | undefined;
-    "product_sale_price": Money;
-    "product_sku": string;
-    "quantity_refunded"?: number | null | undefined;
+    discounts?: [Discount];
+    id: ID;
+    order_item?: OrderItemInterface;
+    product_name?: String;
+    product_sale_price: Money;
+    product_sku: String;
+    quantity_refunded?: Float;
 }

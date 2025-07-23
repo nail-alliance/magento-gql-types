@@ -1,5 +1,6 @@
 import { ReturnShippingTrackingStatusType } from "./gql.returnShippingTrackingStatusType";
+import { String } from "./gql.string";
 export type ReturnShippingTrackingStatus = {
-    "text": string;
-    "type": ReturnShippingTrackingStatusType;
+    text: String;
+    type: ReturnShippingTrackingStatusType;
 };

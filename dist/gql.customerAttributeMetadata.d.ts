@@ -1,0 +1,24 @@
+import { ValidationRule } from "./gql.validationRule";
+import { CustomAttributeOptionInterface } from "./gql.customAttributeOptionInterface";
+import { Int } from "./gql.int";
+import { Boolean } from "./gql.boolean";
+import { InputFilterEnum } from "./gql.inputFilterEnum";
+import { AttributeFrontendInputEnum } from "./gql.attributeFrontendInputEnum";
+import { AttributeEntityTypeEnum } from "./gql.attributeEntityTypeEnum";
+import { String } from "./gql.string";
+import { ID } from "./gql.ID";
+export type CustomerAttributeMetadata = {
+    code: ID;
+    default_value?: String;
+    entity_type: AttributeEntityTypeEnum;
+    frontend_class?: String;
+    frontend_input?: AttributeFrontendInputEnum;
+    input_filter?: InputFilterEnum;
+    is_required: Boolean;
+    is_unique: Boolean;
+    label?: String;
+    multiline_count?: Int;
+    options: [CustomAttributeOptionInterface];
+    sort_order?: Int;
+    validate_rules?: [ValidationRule];
+};

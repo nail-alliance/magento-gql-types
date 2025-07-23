@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type CustomerAddressAttribute = {
-    "attribute_code"?: string | null | undefined;
-    "value"?: string | null | undefined;
+    attribute_code?: String;
+    value?: String;
 };

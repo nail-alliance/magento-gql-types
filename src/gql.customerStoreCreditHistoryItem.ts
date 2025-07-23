@@ -1,8 +1,8 @@
 import {Money} from "./gql.money";
-
+import {String} from "./gql.string";
 export type CustomerStoreCreditHistoryItem = {
-    "action"?: string | null | undefined
-    "actual_balance"?: Money | null | undefined
-    "balance_change"?: Money | null | undefined
-    "date_time_changed"?: string | null | undefined
+	action?: String // The action that was made on the store credit.
+	actual_balance?: Money // The store credit available to the customer as a result of this action.
+	balance_change?: Money // The amount added to or subtracted from the store credit as a result of this action.
+	date_time_changed?: String // The date and time when the store credit change was made.
 }

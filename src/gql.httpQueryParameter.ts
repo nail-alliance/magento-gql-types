@@ -1,4 +1,5 @@
+import {String} from "./gql.string";
 export type HttpQueryParameter = {
-    "name"?: string | null | undefined
-    "value"?: string | null | undefined
+	name?: String // A parameter name.
+	value?: String // A parameter value.
 }

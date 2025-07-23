@@ -1,4 +1,4 @@
 export enum ReturnShippingTrackingStatusType {
-    INFORMATION = "INFORMATION",
-    ERROR = "ERROR",
+	INFORMATION = "INFORMATION",
+	ERROR = "ERROR",
 }

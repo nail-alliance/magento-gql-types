@@ -1,11 +1,12 @@
+import { CreditMemoTotal } from "./gql.creditMemoTotal";
+import { String } from "./gql.string";
+import { CreditMemoItemInterface } from "./gql.creditMemoItemInterface";
 import { ID } from "./gql.ID";
 import { SalesCommentItem } from "./gql.salesCommentItem";
-import { CreditMemoTotal } from "./gql.creditMemoTotal";
-import { CreditMemoItemInterface } from "./gql.creditMemoItemInterface";
 export type CreditMemo = {
-    "comments"?: SalesCommentItem[] | null | undefined;
-    "id": ID;
-    "items"?: CreditMemoItemInterface[] | null | undefined;
-    "number": string;
-    "total": CreditMemoTotal;
+    comments?: [SalesCommentItem];
+    id: ID;
+    items?: [CreditMemoItemInterface];
+    number: String;
+    total?: CreditMemoTotal;
 };

@@ -1,14 +1,16 @@
-import { ReturnCustomAttribute } from "./gql.returnCustomAttribute";
-import { AttributeValueInterface } from "./gql.attributeValueInterface";
-import { ReturnItemStatus } from "./gql.returnItemStatus";
 import { ID } from "./gql.ID";
+import { ReturnItemStatus } from "./gql.returnItemStatus";
+import { Float } from "./gql.float";
 import { OrderItemInterface } from "./gql.orderItemInterface";
+import { AttributeValueInterface } from "./gql.attributeValueInterface";
+import { ReturnCustomAttribute } from "./gql.returnCustomAttribute";
 export type ReturnItem = {
-    "custom_attributes"?: ReturnCustomAttribute[] | null | undefined;
-    "custom_attributesV2"?: AttributeValueInterface[] | null | undefined;
-    "order_item": OrderItemInterface;
-    "quantity": number;
-    "request_quantity": number;
-    "status": ReturnItemStatus;
-    "uid": ID;
+    /** @deprecated */
+    custom_attributes?: [ReturnCustomAttribute];
+    custom_attributesV2?: [AttributeValueInterface];
+    order_item: OrderItemInterface;
+    quantity: Float;
+    request_quantity: Float;
+    status: ReturnItemStatus;
+    uid: ID;
 };

@@ -1,5 +1,6 @@
+import { String } from "./gql.string";
 export type ReturnCustomer = {
-    "email": string;
-    "firstname"?: string | null | undefined;
-    "lastname"?: string | null | undefined;
+    email: String;
+    firstname?: String;
+    lastname?: String;
 };

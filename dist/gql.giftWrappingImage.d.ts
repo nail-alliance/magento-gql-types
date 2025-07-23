@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type GiftWrappingImage = {
-    "label": string;
-    "url": string;
+    label: String;
+    url: String;
 };

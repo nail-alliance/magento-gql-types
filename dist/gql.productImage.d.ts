@@ -1,6 +1,9 @@
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
+import { Boolean } from "./gql.boolean";
 export type ProductImage = {
-    "disabled"?: boolean | null | undefined;
-    "label"?: string | null | undefined;
-    "position"?: number | null | undefined;
-    "url"?: string | null | undefined;
+    disabled?: Boolean;
+    label?: String;
+    position?: Int;
+    url?: String;
 };

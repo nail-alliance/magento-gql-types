@@ -1,3 +1,4 @@
+import { String } from "./gql.string";
 export type ComplexTextValue = {
-    html: string;
+    html: String;
 };

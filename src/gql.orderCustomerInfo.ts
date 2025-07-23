@@ -1,7 +1,8 @@
+import {String} from "./gql.string";
 export type OrderCustomerInfo = {
-    "firstname": string
-    "lastname"?: string | null | undefined
-    "middlename"?: string | null | undefined
-    "prefix"?: string | null | undefined
-    "suffix"?: string | null | undefined
+	firstname: String // First name of the customer
+	lastname?: String // Last name of the customer
+	middlename?: String // Middle name of the customer
+	prefix?: String // Prefix of the customer
+	suffix?: String // Suffix of the customer
 }

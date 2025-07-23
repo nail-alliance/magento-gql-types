@@ -1,4 +1,4 @@
 export enum PurchaseOrderApprovalRuleStatus {
-    ENABLED = "ENABLED",
-    DISABLED = "DISABLED",
+	ENABLED = "ENABLED",
+	DISABLED = "DISABLED",
 }

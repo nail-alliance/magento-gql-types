@@ -1,4 +1,5 @@
+import {String} from "./gql.string";
 export type GiftWrappingImage = {
-    "label": string;
-    "url": string
+	label: String // The gift wrapping preview image label.
+	url: String // The gift wrapping preview image URL.
 }

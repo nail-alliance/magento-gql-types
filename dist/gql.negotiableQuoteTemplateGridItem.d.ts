@@ -1,0 +1,22 @@
+import { ID } from "./gql.ID";
+import { Float } from "./gql.float";
+import { Int } from "./gql.int";
+import { Boolean } from "./gql.boolean";
+import { String } from "./gql.string";
+export type NegotiableQuoteTemplateGridItem = {
+    activated_at: String;
+    company_name: String;
+    expiration_date: String;
+    is_min_max_qty_used: Boolean;
+    last_shared_at: String;
+    max_order_commitment: Int;
+    min_negotiated_grand_total: Float;
+    min_order_commitment: Int;
+    name: String;
+    orders_placed: Int;
+    sales_rep_name: String;
+    state: String;
+    status: String;
+    submitted_by: String;
+    template_id: ID;
+};

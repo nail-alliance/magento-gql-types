@@ -1,4 +1,4 @@
 export enum CartDiscountType {
-    ITEM = "ITEM",
-    SHIPPING = "SHIPPING",
+	ITEM = "ITEM",
+	SHIPPING = "SHIPPING",
 }

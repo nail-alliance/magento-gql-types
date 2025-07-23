@@ -1,133 +1,139 @@
-import { CategoryInterface } from "./gql.categoryInterface";
-import { ProductCustomAttributes } from "./gql.productCustomAttributes";
-import { ProductImage } from "./gql.productImage";
-import { MediaGalleryInterface } from "./gql.mediaGalleryInterface";
-import { ComplexTextValue } from "./gql.complexTextValue";
-import { MediaGalleryEntry } from "./gql.mediaGalleryEntry";
-import { ProductPrices } from "./gql.productPrices";
-import { PriceRange } from "./gql.priceRange";
-import { TierPrice } from "./gql.tierPrice";
-import { ProductLinksInterface } from "./gql.productLinksInterface";
-import { ProductReviews } from "./gql.productReviews";
-import { CatalogRule } from "./gql.catalogRule";
-import { ProductStockStatus } from "./gql.productStockStatus";
-import { ProductTierPrices } from "./gql.productTierPrices";
-import { UrlRewrite } from "./gql.urlRewrite";
-import { Money } from "./gql.money";
-import { ID } from "./gql.ID";
 import { Website } from "./gql.website";
+import { UrlRewrite } from "./gql.urlRewrite";
+import { ID } from "./gql.ID";
+import { ProductTierPrices } from "./gql.productTierPrices";
+import { ProductStockStatus } from "./gql.productStockStatus";
+import { CatalogRule } from "./gql.catalogRule";
+import { ProductReviews } from "./gql.productReviews";
+import { ProductLinksInterface } from "./gql.productLinksInterface";
+import { TierPrice } from "./gql.tierPrice";
+import { PriceRange } from "./gql.priceRange";
+import { ProductPrices } from "./gql.productPrices";
+import { MediaGalleryEntry } from "./gql.mediaGalleryEntry";
+import { MediaGalleryInterface } from "./gql.mediaGalleryInterface";
+import { Float } from "./gql.float";
+import { ProductImage } from "./gql.productImage";
+import { Money } from "./gql.money";
+import { Boolean } from "./gql.boolean";
+import { ComplexTextValue } from "./gql.complexTextValue";
+import { ProductCustomAttributes } from "./gql.productCustomAttributes";
+import { CategoryInterface } from "./gql.categoryInterface";
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
 export interface ProductInterface {
     /** @deprecated */
-    "activity"?: string | null | undefined;
+    activity?: String;
     /** @deprecated */
-    "attribute_set_id"?: number | null | undefined;
-    "canonical_url"?: string | null | undefined;
-    "categories"?: CategoryInterface[] | null | undefined;
+    attribute_set_id?: Int;
+    canonical_url?: String;
+    categories?: [CategoryInterface];
     /** @deprecated */
-    "category_gear"?: string | null | undefined;
+    category_gear?: String;
     /** @deprecated */
-    "climate"?: string | null | undefined;
+    climate?: String;
     /** @deprecated */
-    "collar"?: string | null | undefined;
+    collar?: String;
     /** @deprecated */
-    "color"?: number | null | undefined;
-    "country_of_manufacture"?: string | null | undefined;
+    color?: Int;
+    country_of_manufacture?: String;
     /** @deprecated */
-    "created_at"?: string | null | undefined;
-    "crosssell_products"?: ProductInterface[] | null | undefined;
-    "custom_attributesV2"?: ProductCustomAttributes | null | undefined;
-    "description"?: ComplexTextValue | null | undefined;
+    created_at?: String;
+    crosssell_products?: [ProductInterface];
+    custom_attributesV2?: ProductCustomAttributes;
+    description?: ComplexTextValue;
     /** @deprecated */
-    "eco_collection"?: number | null | undefined;
+    eco_collection?: Int;
     /** @deprecated */
-    "erin_recommends"?: number | null | undefined;
+    erin_recommends?: Int;
     /** @deprecated */
-    "features_bags"?: string | null | undefined;
+    features_bags?: String;
     /** @deprecated */
-    "format"?: number | null | undefined;
+    format?: Int;
     /** @deprecated */
-    "gender"?: string | null | undefined;
-    "gift_message_available": boolean;
-    "gift_wrapping_available": boolean;
-    "gift_wrapping_price": Money;
+    gender?: String;
+    gift_message_available: Boolean;
+    gift_wrapping_available: Boolean;
+    gift_wrapping_price?: Money;
     /** @deprecated */
-    "id"?: number | null | undefined;
-    "image"?: ProductImage | null | undefined;
-    "is_returnable"?: string | null | undefined;
-    "manufacturer"?: number | null | undefined;
-    "material"?: string | null | undefined;
-    "max_sale_qty"?: number | null | undefined;
-    "media_gallery"?: MediaGalleryInterface[] | null | undefined;
+    id?: Int;
+    image?: ProductImage;
+    is_returnable?: String;
     /** @deprecated */
-    "media_gallery_entries"?: MediaGalleryEntry[] | null | undefined;
-    "meta_description"?: string | null | undefined;
-    "meta_keyword"?: string | null | undefined;
-    "meta_title"?: string | null | undefined;
-    "min_sale_qty"?: number | null | undefined;
-    "name"?: string | null | undefined;
+    manufacturer?: Int;
     /** @deprecated */
-    "new": number;
-    "new_from_date"?: string | null | undefined;
-    "new_to_date"?: string | null | undefined;
-    "only_x_left_in_stock"?: number | null | undefined;
-    "options_container"?: string | null | undefined;
+    material?: String;
+    max_sale_qty?: Float;
+    media_gallery?: [MediaGalleryInterface];
     /** @deprecated */
-    "pattern"?: string | null | undefined;
+    media_gallery_entries?: [MediaGalleryEntry];
+    meta_description?: String;
+    meta_keyword?: String;
+    meta_title?: String;
+    min_sale_qty?: Float;
+    name?: String;
     /** @deprecated */
-    "performance_fabric"?: number | null | undefined;
+    new?: Int;
+    new_from_date?: String;
+    new_to_date?: String;
+    only_x_left_in_stock?: Float;
+    options_container?: String;
     /** @deprecated */
-    "price"?: ProductPrices | null | undefined;
-    "price_range": PriceRange;
-    "price_tiers"?: TierPrice[] | null | undefined;
-    "product_links"?: ProductLinksInterface[] | null | undefined;
+    pattern?: String;
     /** @deprecated */
-    "purpose"?: number | null | undefined;
-    "quantity"?: number | null | undefined;
-    "rating_summary": number;
-    "related_products"?: ProductInterface[] | null | undefined;
-    "review_count": number;
-    "reviews": ProductReviews;
-    "rules"?: CatalogRule[] | null | undefined;
+    performance_fabric?: Int;
     /** @deprecated */
-    "sale"?: number | null | undefined;
-    "short_description"?: ComplexTextValue | null | undefined;
+    price?: ProductPrices;
+    price_range: PriceRange;
+    price_tiers?: [TierPrice];
+    product_links?: [ProductLinksInterface];
     /** @deprecated */
-    "size"?: number | null | undefined;
-    "sku"?: string | null | undefined;
+    purpose?: Int;
+    quantity?: Float;
+    rating_summary: Float;
+    related_products?: [ProductInterface];
+    review_count: Int;
+    reviews: ProductReviews;
+    rules?: [CatalogRule];
     /** @deprecated */
-    "sleeve"?: string | null | undefined;
-    "small_image"?: ProductImage | null | undefined;
+    sale?: Int;
+    short_description?: ComplexTextValue;
     /** @deprecated */
-    "special_from_date"?: string | null | undefined;
-    "special_price"?: number | null | undefined;
-    "special_to_date"?: string | null | undefined;
-    "staged": boolean;
-    "stock_status"?: ProductStockStatus | null | undefined;
+    size?: Int;
+    sku?: String;
     /** @deprecated */
-    "strap_bags"?: string | null | undefined;
+    sleeve?: String;
+    small_image?: ProductImage;
     /** @deprecated */
-    "style_bags"?: string | null | undefined;
+    special_from_date?: String;
+    special_price?: Float;
+    special_to_date?: String;
+    staged: Boolean;
+    stock_status?: ProductStockStatus;
     /** @deprecated */
-    "style_bottom"?: string | null | undefined;
+    strap_bags?: String;
     /** @deprecated */
-    "style_general"?: string | null | undefined;
-    "swatch_image"?: string | null | undefined;
-    "thumbnail"?: ProductImage | null | undefined;
+    style_bags?: String;
     /** @deprecated */
-    "tier_price"?: number | null | undefined;
+    style_bottom?: String;
     /** @deprecated */
-    "tier_prices"?: ProductTierPrices[] | null | undefined;
+    style_general?: String;
+    swatch_image?: String;
+    thumbnail?: ProductImage;
     /** @deprecated */
-    "type_id"?: string | null | undefined;
-    "uid": ID;
+    tier_price?: Float;
     /** @deprecated */
-    "updated_at"?: string | null | undefined;
-    "upsell_products"?: ProductInterface[] | null | undefined;
-    "url_key"?: string | null | undefined;
+    tier_prices?: [ProductTierPrices];
     /** @deprecated */
-    "url_path"?: string | null | undefined;
-    "url_rewrites"?: UrlRewrite[] | null | undefined;
-    "url_suffix"?: string | null | undefined;
+    type_id?: String;
+    uid: ID;
     /** @deprecated */
-    "websites"?: Website[] | null | undefined;
+    updated_at?: String;
+    upsell_products?: [ProductInterface];
+    url_key?: String;
+    /** @deprecated */
+    url_path?: String;
+    url_rewrites?: [UrlRewrite];
+    url_suffix?: String;
+    /** @deprecated */
+    websites?: [Website];
 }

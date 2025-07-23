@@ -1,7 +1,8 @@
+import { String } from "./gql.string";
 import { Money } from "./gql.money";
 export type AppliedGiftCard = {
-    "applied_balance"?: Money | null | undefined;
-    "code"?: string | null | undefined;
-    "current_balance"?: Money | null | undefined;
-    "expiration_date"?: string | null | undefined;
+    applied_balance?: Money;
+    code?: String;
+    current_balance?: Money;
+    expiration_date?: String;
 };

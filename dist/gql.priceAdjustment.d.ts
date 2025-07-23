@@ -1,11 +1,12 @@
-import { Money } from "./gql.money";
-import { PriceAdjustmentCodesEnum } from "./gql.priceAdjustmentCodesEnum";
 import { PriceAdjustmentDescriptionEnum } from "./gql.priceAdjustmentDescriptionEnum";
+import { PriceAdjustmentCodesEnum } from "./gql.priceAdjustmentCodesEnum";
+import { Money } from "./gql.money";
 /** @deprecated */
 export type PriceAdjustment = {
-    "amount": Money;
     /** @deprecated */
-    "code": PriceAdjustmentCodesEnum;
+    amount?: Money;
     /** @deprecated */
-    "description": PriceAdjustmentDescriptionEnum;
+    code?: PriceAdjustmentCodesEnum;
+    /** @deprecated */
+    description?: PriceAdjustmentDescriptionEnum;
 };

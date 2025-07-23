@@ -1,0 +1,20 @@
+export declare enum SwatchInputTypeEnum {
+    BOOLEAN = "BOOLEAN",
+    DATE = "DATE",
+    DATETIME = "DATETIME",
+    DROPDOWN = "DROPDOWN",
+    FILE = "FILE",
+    GALLERY = "GALLERY",
+    HIDDEN = "HIDDEN",
+    IMAGE = "IMAGE",
+    MEDIA_IMAGE = "MEDIA_IMAGE",
+    MULTILINE = "MULTILINE",
+    MULTISELECT = "MULTISELECT",
+    PRICE = "PRICE",
+    SELECT = "SELECT",
+    TEXT = "TEXT",
+    TEXTAREA = "TEXTAREA",
+    UNDEFINED = "UNDEFINED",
+    VISUAL = "VISUAL",
+    WEIGHT = "WEIGHT"
+}

@@ -1,0 +1,6 @@
+export declare enum AddRequisitionListItemToCartUserErrorType {
+    OUT_OF_STOCK = "OUT_OF_STOCK",
+    UNAVAILABLE_SKU = "UNAVAILABLE_SKU",
+    OPTIONS_UPDATED = "OPTIONS_UPDATED",
+    LOW_QUANTITY = "LOW_QUANTITY"
+}

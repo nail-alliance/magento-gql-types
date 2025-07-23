@@ -1,0 +1,37 @@
+import { FilterRangeTypeInput } from "./gql.filterRangeTypeInput";
+import { FilterMatchTypeInput } from "./gql.filterMatchTypeInput";
+import { FilterEqualTypeInput } from "./gql.filterEqualTypeInput";
+export type ProductAttributeFilterInput = {
+    activity?: FilterEqualTypeInput;
+    category_gear?: FilterEqualTypeInput;
+    /** @deprecated */
+    category_id?: FilterEqualTypeInput;
+    category_uid?: FilterEqualTypeInput;
+    category_url_path?: FilterEqualTypeInput;
+    climate?: FilterEqualTypeInput;
+    collar?: FilterEqualTypeInput;
+    color?: FilterEqualTypeInput;
+    description?: FilterMatchTypeInput;
+    eco_collection?: FilterEqualTypeInput;
+    erin_recommends?: FilterEqualTypeInput;
+    features_bags?: FilterEqualTypeInput;
+    format?: FilterEqualTypeInput;
+    gender?: FilterEqualTypeInput;
+    material?: FilterEqualTypeInput;
+    name?: FilterMatchTypeInput;
+    new?: FilterEqualTypeInput;
+    pattern?: FilterEqualTypeInput;
+    performance_fabric?: FilterEqualTypeInput;
+    price?: FilterRangeTypeInput;
+    purpose?: FilterEqualTypeInput;
+    sale?: FilterEqualTypeInput;
+    short_description?: FilterMatchTypeInput;
+    size?: FilterEqualTypeInput;
+    sku?: FilterEqualTypeInput;
+    sleeve?: FilterEqualTypeInput;
+    strap_bags?: FilterEqualTypeInput;
+    style_bags?: FilterEqualTypeInput;
+    style_bottom?: FilterEqualTypeInput;
+    style_general?: FilterEqualTypeInput;
+    url_key?: FilterEqualTypeInput;
+};

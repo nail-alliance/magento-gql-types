@@ -1,3 +1,4 @@
+import { String } from "./gql.string";
 export type CustomerToken = {
-    "token": string;
+    token?: String;
 };

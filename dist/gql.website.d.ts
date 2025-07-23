@@ -1,15 +1,18 @@
+import { Boolean } from "./gql.boolean";
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
 /** @deprecated */
 export type Website = {
     /** @deprecated */
-    "code"?: string | null | undefined;
+    code?: String;
     /** @deprecated */
-    "default_group_id"?: string | null | undefined;
+    default_group_id?: String;
     /** @deprecated */
-    "id"?: number | null | undefined;
+    id?: Int;
     /** @deprecated */
-    "is_default"?: boolean | null | undefined;
+    is_default?: Boolean;
     /** @deprecated */
-    "name"?: string | null | undefined;
+    name?: String;
     /** @deprecated */
-    "sort_order"?: number | null | undefined;
+    sort_order?: Int;
 };

@@ -1,5 +1,6 @@
 import { AttributeMetadataErrorType } from "./gql.attributeMetadataErrorType";
+import { String } from "./gql.string";
 export type AttributeMetadataError = {
-    "message": string;
-    "type": AttributeMetadataErrorType;
+    message: String;
+    type: AttributeMetadataErrorType;
 };

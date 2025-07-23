@@ -1,15 +1,17 @@
-import { ID } from "./gql.ID";
-import { WishlistItem } from "./gql.wishlistItem";
-import { WishlistItems } from "./gql.wishlistItems";
 import { WishlistVisibilityEnum } from "./gql.wishlistVisibilityEnum";
+import { String } from "./gql.string";
+import { WishlistItems } from "./gql.wishlistItems";
+import { Int } from "./gql.int";
+import { WishlistItem } from "./gql.wishlistItem";
+import { ID } from "./gql.ID";
 export type Wishlist = {
-    "id"?: ID | null | undefined;
+    id?: ID;
     /** @deprecated */
-    "items"?: WishlistItem[] | null | undefined;
-    "items_count": number;
-    "items_v2": WishlistItems;
-    "name"?: string | null | undefined;
-    "sharing_code"?: string | null | undefined;
-    "updated_at"?: string | null | undefined;
-    "visibility": WishlistVisibilityEnum;
+    items?: [WishlistItem];
+    items_count?: Int;
+    items_v2?: WishlistItems;
+    name?: String;
+    sharing_code?: String;
+    updated_at?: String;
+    visibility: WishlistVisibilityEnum;
 };

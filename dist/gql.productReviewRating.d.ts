@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type ProductReviewRating = {
-    "name": string;
-    "value": string;
+    name: String;
+    value: String;
 };

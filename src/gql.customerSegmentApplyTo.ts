@@ -1,5 +1,5 @@
 export enum CustomerSegmentApplyTo {
-    BOTH = "BOTH",
-    REGISTERED = "REGISTERED",
-    VISITOR = "VISITOR",
+	BOTH = "BOTH",
+	REGISTERED = "REGISTERED",
+	VISITOR = "VISITOR",
 }

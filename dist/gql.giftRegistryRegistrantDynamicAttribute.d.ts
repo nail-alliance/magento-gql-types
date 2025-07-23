@@ -1,6 +1,7 @@
+import { String } from "./gql.string";
 import { ID } from "./gql.ID";
 export type GiftRegistryRegistrantDynamicAttribute = {
-    "code": ID;
-    "label": string;
-    "value": string;
+    code: ID;
+    label: String;
+    value: String;
 };

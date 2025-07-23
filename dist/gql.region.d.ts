@@ -1,5 +1,7 @@
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
 export type Region = {
-    "code"?: string | null | undefined;
-    "id"?: number | null | undefined;
-    "name"?: string | null | undefined;
+    code?: String;
+    id?: Int;
+    name?: String;
 };

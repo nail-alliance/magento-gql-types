@@ -1,10 +1,12 @@
 import { ID } from "./gql.ID";
+import { Int } from "./gql.int";
 import { RequistionListItems } from "./gql.requistionListItems";
+import { String } from "./gql.string";
 export type RequisitionList = {
-    "description"?: string | null | undefined;
-    "items": RequistionListItems;
-    "items_count": number;
-    "name": string;
-    "uid": ID;
-    "updated_at"?: string | null | undefined;
+    description?: String;
+    items?: RequistionListItems;
+    items_count: Int;
+    name: String;
+    uid: ID;
+    updated_at?: String;
 };

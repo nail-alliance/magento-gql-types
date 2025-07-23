@@ -1,5 +1,6 @@
+import {String} from "./gql.string";
 export type CmsBlock = {
-    "content"?: string | null | undefined
-    "identifier"?: string | null | undefined
-    "title"?: string | null | undefined
+	content?: String // The content of the CMS block in raw HTML.
+	identifier?: String // The CMS block identifier.
+	title?: String // The title assigned to the CMS block.
 }

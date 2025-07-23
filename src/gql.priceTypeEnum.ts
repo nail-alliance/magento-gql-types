@@ -1,5 +1,5 @@
 export enum PriceTypeEnum {
-    FIXED = "FIXED",
-    PERCENT = "PERCENT",
-    DYNAMIC = "DYNAMIC",
+	FIXED = "FIXED",
+	PERCENT = "PERCENT",
+	DYNAMIC = "DYNAMIC",
 }

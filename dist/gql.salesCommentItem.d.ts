@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export type SalesCommentItem = {
-    "message": string;
-    "timestamp": string;
+    message: String;
+    timestamp: String;
 };

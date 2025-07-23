@@ -1,7 +1,8 @@
-import { CustomerStoreCreditHistory } from "./gql.customerStoreCreditHistory";
+import { Boolean } from "./gql.boolean";
 import { Money } from "./gql.money";
+import { CustomerStoreCreditHistory } from "./gql.customerStoreCreditHistory";
 export type CustomerStoreCredit = {
-    "balance_history"?: CustomerStoreCreditHistory | null | undefined;
-    "current_balance"?: Money | null | undefined;
-    "enabled"?: boolean | null | undefined;
+    balance_history?: CustomerStoreCreditHistory;
+    current_balance?: Money;
+    enabled?: Boolean;
 };

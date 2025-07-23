@@ -1,7 +1,9 @@
+import { String } from "./gql.string";
+import { Int } from "./gql.int";
 import { ID } from "./gql.ID";
 export type CompanyAclResource = {
-    "children"?: CompanyAclResource[] | null | undefined;
-    "id": ID;
-    "sort_order"?: number | null | undefined;
-    "text"?: string | null | undefined;
+    children?: [CompanyAclResource];
+    id: ID;
+    sort_order?: Int;
+    text?: String;
 };

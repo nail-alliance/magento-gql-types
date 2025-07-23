@@ -1,2 +1,5 @@
-import { AttributeSelectedOptionInterface } from "./gql.attributeSelectedOptionInterface";
-export type AttributeSelectedOption = AttributeSelectedOptionInterface;
+import { String } from "./gql.string";
+export type AttributeSelectedOption = {
+    label: String;
+    value: String;
+};

@@ -1,9 +1,12 @@
 import { Money } from "./gql.money";
-import { ID } from "./gql.ID";
 import { GiftWrappingImage } from "./gql.giftWrappingImage";
+import { ID } from "./gql.ID";
+import { String } from "./gql.string";
 export type GiftWrapping = {
-    "design": string;
-    "image"?: GiftWrappingImage | null | undefined;
-    "price": Money;
-    "uid": ID;
+    design: String;
+    /** @deprecated */
+    id: ID;
+    image?: GiftWrappingImage;
+    price: Money;
+    uid: ID;
 };

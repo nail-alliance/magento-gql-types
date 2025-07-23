@@ -1,4 +1,6 @@
-import { AttributeValueInterface } from "./gql.attributeValueInterface";
-export type AttributeValue = AttributeValueInterface & {
-    "value": string;
+import { String } from "./gql.string";
+import { ID } from "./gql.ID";
+export type AttributeValue = {
+    code: ID;
+    value: String;
 };

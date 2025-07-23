@@ -1,8 +1,9 @@
-import { Customer } from "./gql.customer";
 import { ID } from "./gql.ID";
+import { String } from "./gql.string";
+import { Customer } from "./gql.customer";
 export type PurchaseOrderComment = {
-    "author"?: Customer | null | undefined;
-    "created_at": string;
-    "text": string;
-    "uid": ID;
+    author?: Customer;
+    created_at: String;
+    text: String;
+    uid: ID;
 };

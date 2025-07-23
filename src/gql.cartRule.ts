@@ -1,3 +1,4 @@
+import {String} from "./gql.string";
 export type CartRule = {
-    name: string
+	name: String // Name of the cart price rule
 }

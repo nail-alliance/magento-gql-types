@@ -1,11 +1,12 @@
-import { Country } from "./gql.country";
 import { Region } from "./gql.region";
+import { Country } from "./gql.country";
+import { String } from "./gql.string";
 export type ReturnShippingAddress = {
-    "city": string;
-    "contact_name"?: string | null | undefined;
-    "country": Country;
-    "postcode": string;
-    "region": Region;
-    "street": string[];
-    "telephone": string;
+    city: String;
+    contact_name?: String;
+    country: Country;
+    postcode: String;
+    region: Region;
+    street: [String];
+    telephone?: String;
 };

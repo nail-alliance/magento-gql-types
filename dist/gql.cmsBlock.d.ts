@@ -1,5 +1,6 @@
+import { String } from "./gql.string";
 export type CmsBlock = {
-    "content"?: string | null | undefined;
-    "identifier"?: string | null | undefined;
-    "title"?: string | null | undefined;
+    content?: String;
+    identifier?: String;
+    title?: String;
 };

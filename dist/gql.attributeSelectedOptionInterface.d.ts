@@ -1,4 +1,5 @@
+import { String } from "./gql.string";
 export interface AttributeSelectedOptionInterface {
-    "label": string;
-    "value": string;
+    label: String;
+    value: String;
 }

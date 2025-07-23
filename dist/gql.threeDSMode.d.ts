@@ -1,0 +1,5 @@
+export declare enum ThreeDSMode {
+    OFF = "OFF",
+    SCA_WHEN_REQUIRED = "SCA_WHEN_REQUIRED",
+    SCA_ALWAYS = "SCA_ALWAYS"
+}

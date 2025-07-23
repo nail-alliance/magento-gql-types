@@ -1,16 +1,19 @@
-import { ID } from "./gql.ID";
-import { ProductMediaGalleryEntriesContent } from "./gql.productMediaGalleryEntriesContent";
 import { ProductMediaGalleryEntriesVideoContent } from "./gql.productMediaGalleryEntriesVideoContent";
+import { ID } from "./gql.ID";
+import { Int } from "./gql.int";
+import { String } from "./gql.string";
+import { Boolean } from "./gql.boolean";
+import { ProductMediaGalleryEntriesContent } from "./gql.productMediaGalleryEntriesContent";
 export type MediaGalleryEntry = {
-    "content"?: ProductMediaGalleryEntriesContent | null | undefined;
-    "disabled"?: boolean | null | undefined;
-    "file"?: string | null | undefined;
+    content?: ProductMediaGalleryEntriesContent;
+    disabled?: Boolean;
+    file?: String;
     /** @deprecated */
-    "id"?: number | null | undefined;
-    "label"?: string | null | undefined;
-    "media_type"?: string | null | undefined;
-    "position"?: number | null | undefined;
-    "types"?: string[] | null | undefined;
-    "uid": ID;
-    "video_content"?: ProductMediaGalleryEntriesVideoContent | null | undefined;
+    id?: Int;
+    label?: String;
+    media_type?: String;
+    position?: Int;
+    types?: [String];
+    uid: ID;
+    video_content?: ProductMediaGalleryEntriesVideoContent;
 };
