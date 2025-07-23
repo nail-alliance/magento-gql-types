@@ -7,7 +7,7 @@ import {Int} from "./gql.int";
 export type BundleItem = {
 	/** @deprecated */
 	option_id?: Int // Deprecated An ID assigned to each type of item in a bundle product. Use uid instead
-	options?: [BundleItemOption] // An array of additional options for this bundle item.
+	options?: BundleItemOption[] // An array of additional options for this bundle item.
 	position?: Int // A number indicating the sequence order of this item compared to the other bundle items.
 	price_range: PriceRange // The range of prices for the product
 	required?: Boolean // Indicates whether the item must be included in the bundle.

@@ -10,5 +10,5 @@ export type CustomizableRadioOption = {
 	sort_order?: Int // The order in which the option is displayed.
 	title?: String // The display name for this option.
 	uid: ID // The unique ID for a CustomizableOptionInterface object.
-	value?: [CustomizableRadioValue] // An array that defines a set of radio buttons.
+	value?: CustomizableRadioValue[] // An array that defines a set of radio buttons.
 }

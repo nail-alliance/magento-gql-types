@@ -12,7 +12,7 @@ import {CompanyCredit} from "./gql.companyCredit";
 import {Customer} from "./gql.customer";
 import {CompanyAclResource} from "./gql.companyAclResource";
 export type Company = {
-	acl_resources?: [CompanyAclResource] // The list of all resources defined within the company.
+	acl_resources?: CompanyAclResource[] // The list of all resources defined within the company.
 	company_admin?: Customer // An object containing information about the company administrator.
 	credit: CompanyCredit // Company credit balances and limits.
 	credit_history: CompanyCreditHistory // Details about the history of company credit operations.
@@ -21,7 +21,7 @@ export type Company = {
 	legal_address?: CompanyLegalAddress // The address where the company is registered to conduct business.
 	legal_name?: String // The full legal name of the company.
 	name?: String // The name of the company.
-	payment_methods?: [String] // The list of payment methods available to a company.
+	payment_methods?: String[] // The list of payment methods available to a company.
 	reseller_id?: String // The resale number that is assigned to the company for tax reporting purposes.
 	role?: CompanyRole // A company role filtered by the unique ID of a CompanyRole object.
 	roles: CompanyRoles // An object that contains a list of company roles.

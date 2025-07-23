@@ -7,6 +7,6 @@ export type SubmitNegotiableQuoteTemplateForReviewInput = {
 	max_order_commitment?: Int // Commitment for maximum orders
 	min_order_commitment?: Int // Commitment for minimum orders
 	name?: String // The title assigned to the negotiable quote template.
-	reference_document_links?: [NegotiableQuoteTemplateReferenceDocumentLinkInput] // An array of reference document links to add to the negotiable quote template.
+	reference_document_links?: NegotiableQuoteTemplateReferenceDocumentLinkInput[] // An array of reference document links to add to the negotiable quote template.
 	template_id: ID // The unique ID of a NegotiableQuoteTemplate object.
 }

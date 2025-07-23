@@ -28,14 +28,14 @@ import {Boolean} from "./gql.boolean";
 import {CustomerAddresses} from "./gql.customerAddresses";
 import {CustomerAddress} from "./gql.customerAddress";
 export type Customer = {
-	addresses?: [CustomerAddress] // An array containing the customer's shipping and billing addresses.
+	addresses?: CustomerAddress[] // An array containing the customer's shipping and billing addresses.
 	addressesV2?: CustomerAddresses // An array containing the customer's shipping and billing addresses.
 	allow_remote_shopping_assistance: Boolean // Indicates whether the customer has enabled remote shopping assistance.
 	companies: UserCompaniesOutput // An object that contains a list of companies user is assigned to.
 	compare_list?: CompareList // The contents of the customer's compare list.
 	confirmation_status: ConfirmationStatusEnum // The customer's confirmation status.
 	created_at?: String // Timestamp indicating when the account was created.
-	custom_attributes?: [AttributeValueInterface] // Customer's custom attributes.
+	custom_attributes?: AttributeValueInterface[] // Customer's custom attributes.
 	date_of_birth?: String // The customer's date of birth.
 	default_billing?: String // The ID assigned to the billing address.
 	default_shipping?: String // The ID assigned to the shipping address.
@@ -44,7 +44,7 @@ export type Customer = {
 	email?: String // The customer's email address. Required.
 	firstname?: String // The customer's first name.
 	gender?: Int // The customer's gender (Male - 1, Female - 2).
-	gift_registries?: [GiftRegistry] // Details about all of the customer's gift registries.
+	gift_registries?: GiftRegistry[] // Details about all of the customer's gift registries.
 	gift_registry?: GiftRegistry // Details about a specific gift registry.
 	group?: CustomerGroup // Name of the customer group assigned to the customer
 	/** @deprecated */
@@ -69,7 +69,7 @@ export type Customer = {
 	reviews: ProductReviews // Contains the customer's product reviews.
 	reward_points?: RewardPoints // Customer reward points details.
 	role?: CompanyRole // The role name and permissions assigned to the company user.
-	segments?: [CustomerSegment] // Customer segments associated with the current customer
+	segments?: CustomerSegment[] // Customer segments associated with the current customer
 	status?: CompanyUserStatusEnum // Indicates whether the company user is ACTIVE or INACTIVE.
 	store_credit?: CustomerStoreCredit // Store credit information applied for the logged in customer.
 	structure_id: ID // ID of the company structure
@@ -80,5 +80,5 @@ export type Customer = {
 	/** @deprecated */
 	wishlist: Wishlist // Return a customer's wish lists. Use Customer.wishlists or Customer.wishlist_v2 instead. Deprecated
 	wishlist_v2?: Wishlist // Retrieve the wish list identified by the unique ID for a Wishlist object.
-	wishlists: [Wishlist] // An array of wishlists. In Magento Open Source, customers are limited to one wish list. The number of wish lists is configurable for Adobe Commerce.
+	wishlists: Wishlist[] // An array of wishlists. In Magento Open Source, customers are limited to one wish list. The number of wish lists is configurable for Adobe Commerce.
 }

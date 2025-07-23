@@ -10,7 +10,7 @@ export type HostedFieldsConfig = {
 	payment_intent?: String // Defines the payment intent (Authorize or Capture
 	payment_source?: String // The payment source for the payment method
 	requires_card_details?: Boolean // Card and bin details required
-	sdk_params?: [SDKParams] // The PayPal parameters required to load the JS SDK
+	sdk_params?: SDKParams[] // The PayPal parameters required to load the JS SDK
 	sort_order?: String // The relative order the payment method is displayed on the checkout page
 	/** @deprecated */
 	three_ds?: Boolean // Whether 3DS is activated; true if 3DS mode is not OFF. Use 'three_ds_mode' instead. Deprecated

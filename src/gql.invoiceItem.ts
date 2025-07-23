@@ -5,7 +5,7 @@ import {OrderItemInterface} from "./gql.orderItemInterface";
 import {ID} from "./gql.ID";
 import {Discount} from "./gql.discount";
 export type InvoiceItem = {
-	discounts?: [Discount] // Information about the final discount amount for the base product, including discounts on options.
+	discounts?: Discount[] // Information about the final discount amount for the base product, including discounts on options.
 	id: ID // The unique ID for an InvoiceItemInterface object.
 	order_item?: OrderItemInterface // Details about an individual order item.
 	product_name?: String // The name of the base product.

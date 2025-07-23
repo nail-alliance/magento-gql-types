@@ -8,5 +8,5 @@ export type SelectedBundleOption = {
 	label: String // The display name of the selected bundle product option.
 	type: String // The type of selected bundle product option.
 	uid: ID // The unique ID for a SelectedBundleOption object
-	values: [SelectedBundleOptionValue] // An array of selected bundle option values.
+	values: SelectedBundleOptionValue[] // An array of selected bundle option values.
 }

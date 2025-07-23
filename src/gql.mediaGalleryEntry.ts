@@ -13,7 +13,7 @@ export type MediaGalleryEntry = {
 	label?: String // The alt text displayed on the storefront when the user points to the image.
 	media_type?: String // Either image or video.
 	position?: Int // The media item's position after it has been sorted.
-	types?: [String] // Array of image types. It can have the following values: image, small_image, thumbnail.
+	types?: String[] // Array of image types. It can have the following values: image, small_image, thumbnail.
 	uid: ID // The unique ID for a MediaGalleryEntry object.
 	video_content?: ProductMediaGalleryEntriesVideoContent // Details about the content of a video item.
 }

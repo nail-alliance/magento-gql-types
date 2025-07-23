@@ -8,16 +8,16 @@ import {String} from "./gql.string";
 import {CartItemError} from "./gql.cartItemError";
 import {Discount} from "./gql.discount";
 export interface CartItemInterface {
-	discount?: [Discount] // Contains discount for quote line item.
-	errors?: [CartItemError] // An array of errors encountered while loading the cart item
+	discount?: Discount[] // Contains discount for quote line item.
+	errors?: CartItemError[] // An array of errors encountered while loading the cart item
 	/** @deprecated */
 	id: String // Use uid instead. Deprecated
 	is_available: Boolean // True if requested quantity is less than available stock, false otherwise.
 	max_qty?: Float // Line item max qty in quote template
 	min_qty?: Float // Line item min qty in quote template
 	not_available_message?: String // Message to display when the product is not available with this selected option.
-	note_from_buyer?: [ItemNote] // The buyer's quote line item note.
-	note_from_seller?: [ItemNote] // The seller's quote line item note.
+	note_from_buyer?: ItemNote[] // The buyer's quote line item note.
+	note_from_seller?: ItemNote[] // The seller's quote line item note.
 	prices?: CartItemPrices // Contains details about the price of the item, including taxes and discounts.
 	product: ProductInterface // Details about an item in the cart.
 	quantity: Float // The quantity of this item in the cart.

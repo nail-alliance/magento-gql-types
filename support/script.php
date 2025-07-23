@@ -158,6 +158,8 @@ foreach ($lines as $num => $line) {
 
         $pureType = preg_replace("/[^a-zA-Z0-9]/", "", $type);
 
+        $typeIsArray = (substr($type, 0, 1) === "[");
+
         $importName = "/gql." . ($pureType != "ID" ? lcfirst($pureType) : $pureType);
 
         $importFileName = SRC_FOLDER . $importName . ".ts";
@@ -170,7 +172,11 @@ foreach ($lines as $num => $line) {
             }
         }
 
-        $typeLine = "\t{$name}: {$type} // $desc";
+        $typeLine = "\t{$name}: {$pureType} // $desc";
+
+        if ($typeIsArray) {
+            $typeLine = "\t{$name}: {$pureType}[] // $desc";
+        }
 
         if ($unionLine)
         {

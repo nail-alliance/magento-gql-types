@@ -9,7 +9,7 @@ export type GooglePayConfig = {
 	is_visible?: Boolean // Indicates whether the payment method is displayed
 	payment_intent?: String // Defines the payment intent (Authorize or Capture
 	payment_source?: String // The payment source for the payment method
-	sdk_params?: [SDKParams] // The PayPal parameters required to load the JS SDK
+	sdk_params?: SDKParams[] // The PayPal parameters required to load the JS SDK
 	sort_order?: String // The relative order the payment method is displayed on the checkout page
 	three_ds_mode?: ThreeDSMode // 3DS mode
 	title?: String // The name displayed for the payment method

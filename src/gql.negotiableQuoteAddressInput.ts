@@ -11,6 +11,6 @@ export type NegotiableQuoteAddressInput = {
 	region?: String // A string that defines the state or province of the billing or shipping address.
 	region_id?: Int // An integer that defines the state or province of the billing or shipping address.
 	save_in_address_book?: Boolean // Determines whether to save the address in the customer's address book. The default value is true.
-	street: [String] // An array containing the street for the billing or shipping address.
+	street: String[] // An array containing the street for the billing or shipping address.
 	telephone?: String // The telephone number for the billing or shipping address.
 }

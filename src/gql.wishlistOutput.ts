@@ -4,7 +4,7 @@ import {WishlistItem} from "./gql.wishlistItem";
 /** @deprecated */
 export type WishlistOutput = {
 	/** @deprecated */
-	items?: [WishlistItem] // An array of items in the customer's wish list Use the Wishlist.items field instead. Deprecated
+	items?: WishlistItem[] // An array of items in the customer's wish list Use the Wishlist.items field instead. Deprecated
 	/** @deprecated */
 	items_count?: Int // The number of items in the wish list. Use the Wishlist.items_count field instead. Deprecated
 	/** @deprecated */

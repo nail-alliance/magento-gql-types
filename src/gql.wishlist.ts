@@ -7,7 +7,7 @@ import {ID} from "./gql.ID";
 export type Wishlist = {
 	id?: ID // The unique ID for a Wishlist object.
 	/** @deprecated */
-	items?: [WishlistItem] // Use the items_v2 field instead. Deprecated
+	items?: WishlistItem[] // Use the items_v2 field instead. Deprecated
 	items_count?: Int // The number of items in the wish list.
 	items_v2?: WishlistItems // An array of items in the customer's wish list.
 	name?: String // The name of the wish list.

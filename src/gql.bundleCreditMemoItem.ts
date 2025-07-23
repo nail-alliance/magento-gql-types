@@ -6,8 +6,8 @@ import {ID} from "./gql.ID";
 import {Discount} from "./gql.discount";
 import {ItemSelectedBundleOption} from "./gql.itemSelectedBundleOption";
 export type BundleCreditMemoItem = {
-	bundle_options?: [ItemSelectedBundleOption] // A list of bundle options that are assigned to a bundle product that is part of a credit memo.
-	discounts?: [Discount] // Details about the final discount amount for the base product, including discounts on options.
+	bundle_options?: ItemSelectedBundleOption[] // A list of bundle options that are assigned to a bundle product that is part of a credit memo.
+	discounts?: Discount[] // Details about the final discount amount for the base product, including discounts on options.
 	id: ID // The unique ID for a CreditMemoItemInterface object.
 	order_item?: OrderItemInterface // The order item the credit memo is applied to.
 	product_name?: String // The name of the base product.

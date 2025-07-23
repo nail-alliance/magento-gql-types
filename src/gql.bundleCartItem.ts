@@ -12,11 +12,11 @@ import {SelectedCustomizableOption} from "./gql.selectedCustomizableOption";
 import {SelectedBundleOption} from "./gql.selectedBundleOption";
 import {GiftWrapping} from "./gql.giftWrapping";
 export type BundleCartItem = {
-	available_gift_wrapping: [GiftWrapping] // The list of available gift wrapping options for the cart item.
-	bundle_options: [SelectedBundleOption] // An array containing the bundle options the shopper selected.
-	customizable_options: [SelectedCustomizableOption] // An array containing the customizable options the shopper selected.
-	discount?: [Discount] // Contains discount for quote line item.
-	errors?: [CartItemError] // An array of errors encountered while loading the cart item
+	available_gift_wrapping: GiftWrapping[] // The list of available gift wrapping options for the cart item.
+	bundle_options: SelectedBundleOption[] // An array containing the bundle options the shopper selected.
+	customizable_options: SelectedCustomizableOption[] // An array containing the customizable options the shopper selected.
+	discount?: Discount[] // Contains discount for quote line item.
+	errors?: CartItemError[] // An array of errors encountered while loading the cart item
 	gift_message?: GiftMessage // The entered gift message for the cart item
 	gift_wrapping?: GiftWrapping // The selected gift wrapping for the cart item.
 	/** @deprecated */
@@ -25,8 +25,8 @@ export type BundleCartItem = {
 	max_qty?: Float // Line item max qty in quote template
 	min_qty?: Float // Line item min qty in quote template
 	not_available_message?: String // Message to display when the product is not available with this selected option.
-	note_from_buyer?: [ItemNote] // The buyer's quote line item note.
-	note_from_seller?: [ItemNote] // The seller's quote line item note.
+	note_from_buyer?: ItemNote[] // The buyer's quote line item note.
+	note_from_seller?: ItemNote[] // The seller's quote line item note.
 	prices?: CartItemPrices // Contains details about the price of the item, including taxes and discounts.
 	product: ProductInterface // Details about an item in the cart.
 	quantity: Float // The quantity of this item in the cart.

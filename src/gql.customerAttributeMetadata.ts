@@ -18,7 +18,7 @@ export type CustomerAttributeMetadata = {
 	is_unique: Boolean // Whether the attribute value must be unique.
 	label?: String // The label assigned to the attribute.
 	multiline_count?: Int // The number of lines of the attribute value.
-	options: [CustomAttributeOptionInterface] // Attribute options.
+	options: CustomAttributeOptionInterface[] // Attribute options.
 	sort_order?: Int // The position of the attribute in the form.
-	validate_rules?: [ValidationRule] // The validation rules of the attribute value.
+	validate_rules?: ValidationRule[] // The validation rules of the attribute value.
 }

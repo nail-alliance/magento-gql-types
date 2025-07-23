@@ -9,6 +9,6 @@ export type NegotiableQuoteBillingAddress = {
 	lastname: String // The last name of the company user.
 	postcode?: String // The company's ZIP or postal code.
 	region?: NegotiableQuoteAddressRegion // An object containing the region name, region code, and region ID.
-	street: [String] // An array of strings that define the street number and name.
+	street: String[] // An array of strings that define the street number and name.
 	telephone?: String // The customer's telephone number.
 }

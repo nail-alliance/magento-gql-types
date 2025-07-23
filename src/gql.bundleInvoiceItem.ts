@@ -6,8 +6,8 @@ import {ID} from "./gql.ID";
 import {Discount} from "./gql.discount";
 import {ItemSelectedBundleOption} from "./gql.itemSelectedBundleOption";
 export type BundleInvoiceItem = {
-	bundle_options?: [ItemSelectedBundleOption] // A list of bundle options that are assigned to an invoiced bundle product.
-	discounts?: [Discount] // Information about the final discount amount for the base product, including discounts on options.
+	bundle_options?: ItemSelectedBundleOption[] // A list of bundle options that are assigned to an invoiced bundle product.
+	discounts?: Discount[] // Information about the final discount amount for the base product, including discounts on options.
 	id: ID // The unique ID for an InvoiceItemInterface object.
 	order_item?: OrderItemInterface // Details about an individual order item.
 	product_name?: String // The name of the base product.

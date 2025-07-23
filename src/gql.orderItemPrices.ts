@@ -2,8 +2,8 @@ import {Money} from "./gql.money";
 import {FixedProductTax} from "./gql.fixedProductTax";
 import {Discount} from "./gql.discount";
 export type OrderItemPrices = {
-	discounts?: [Discount] // An array of discounts to be applied to the cart item.
-	fixed_product_taxes: [FixedProductTax] // 
+	discounts?: Discount[] // An array of discounts to be applied to the cart item.
+	fixed_product_taxes: FixedProductTax[] // 
 	original_price?: Money // The original price of the item.
 	original_price_including_tax?: Money // The original price of the item including tax.
 	original_row_total: Money // The value of the original price multiplied by the quantity of the item.

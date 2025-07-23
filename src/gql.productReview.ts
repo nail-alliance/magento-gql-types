@@ -7,7 +7,7 @@ export type ProductReview = {
 	created_at: String // The date the review was created.
 	nickname: String // The customer's nickname. Defaults to the customer name, if logged in.
 	product: ProductInterface // The reviewed product.
-	ratings_breakdown: [ProductReviewRating] // An array of ratings by rating category, such as quality, price, and value.
+	ratings_breakdown: ProductReviewRating[] // An array of ratings by rating category, such as quality, price, and value.
 	summary: String // The summary (title) of the review.
 	text: String // The review text.
 }

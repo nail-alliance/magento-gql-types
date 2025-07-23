@@ -6,7 +6,7 @@ import {ID} from "./gql.ID";
 import {GiftCardItem} from "./gql.giftCardItem";
 import {Discount} from "./gql.discount";
 export type GiftCardInvoiceItem = {
-	discounts?: [Discount] // Information about the final discount amount for the base product, including discounts on options.
+	discounts?: Discount[] // Information about the final discount amount for the base product, including discounts on options.
 	gift_card?: GiftCardItem // Selected gift card properties for an invoice item.
 	id: ID // The unique ID for an InvoiceItemInterface object.
 	order_item?: OrderItemInterface // Details about an individual order item.

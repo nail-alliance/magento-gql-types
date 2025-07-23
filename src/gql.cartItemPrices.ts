@@ -4,8 +4,8 @@ import {Discount} from "./gql.discount";
 import {ProductDiscount} from "./gql.productDiscount";
 export type CartItemPrices = {
 	catalog_discount?: ProductDiscount // The price discount for the unit price of the item represents the difference between its regular price and final price.
-	discounts?: [Discount] // An array of discounts to be applied to the cart item.
-	fixed_product_taxes?: [FixedProductTax] // An array of FPTs applied to the cart item.
+	discounts?: Discount[] // An array of discounts to be applied to the cart item.
+	fixed_product_taxes?: FixedProductTax[] // An array of FPTs applied to the cart item.
 	original_item_price: Money // The value of the original unit price for the item, including discounts.
 	original_row_total: Money // The value of the original price multiplied by the quantity of the item.
 	price: Money // The price of the item before any discounts were applied. The price that might include tax, depending on the configured display settings for cart.

@@ -7,7 +7,7 @@ import {String} from "./gql.string";
 import {ID} from "./gql.ID";
 import {CatalogAttributeApplyToEnum} from "./gql.catalogAttributeApplyToEnum";
 export type CatalogAttributeMetadata = {
-	apply_to?: [CatalogAttributeApplyToEnum] // To which catalog types an attribute can be applied.
+	apply_to?: CatalogAttributeApplyToEnum[] // To which catalog types an attribute can be applied.
 	code: ID // The unique identifier for an attribute code. This value should be in lowercase letters without spaces.
 	default_value?: String // Default attribute value.
 	entity_type: AttributeEntityTypeEnum // The type of entity that defines the attribute.
@@ -26,7 +26,7 @@ export type CatalogAttributeMetadata = {
 	is_visible_on_front?: Boolean // Whether a product or category attribute is visible on front or not.
 	is_wysiwyg_enabled?: Boolean // Whether a product or category attribute has WYSIWYG enabled or not.
 	label?: String // The label assigned to the attribute.
-	options: [CustomAttributeOptionInterface] // Attribute options.
+	options: CustomAttributeOptionInterface[] // Attribute options.
 	swatch_input_type?: SwatchInputTypeEnum // Input type of the swatch attribute option.
 	update_product_preview_image?: Boolean // Whether update product preview image or not.
 	use_product_image_for_swatch?: Boolean // Whether use product image for swatch or not.

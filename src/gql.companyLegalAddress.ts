@@ -6,6 +6,6 @@ export type CompanyLegalAddress = {
 	country_code?: CountryCodeEnum // The country code of the company's legal address.
 	postcode?: String // The company's postal code.
 	region?: CustomerAddressRegion // An object containing region data for the company.
-	street?: [String] // An array of strings that define the company's street address.
+	street?: String[] // An array of strings that define the company's street address.
 	telephone?: String // The company's phone number.
 }

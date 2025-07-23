@@ -3,7 +3,7 @@ import {Int} from "./gql.int";
 import {LayerFilterItemInterface} from "./gql.layerFilterItemInterface";
 export type LayerFilter = {
 	/** @deprecated */
-	filter_items?: [LayerFilterItemInterface] // An array of filter items. Use Aggregation.options instead. Deprecated
+	filter_items?: LayerFilterItemInterface[] // An array of filter items. Use Aggregation.options instead. Deprecated
 	/** @deprecated */
 	filter_items_count?: Int // The count of filter items in filter group. Use Aggregation.count instead. Deprecated
 	/** @deprecated */

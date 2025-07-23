@@ -10,5 +10,5 @@ export type CustomizableDropDownOption = {
 	sort_order?: Int // The order in which the option is displayed.
 	title?: String // The display name for this option.
 	uid: ID // The unique ID for a CustomizableOptionInterface object.
-	value?: [CustomizableDropDownValue] // An array that defines the set of options for a drop down menu.
+	value?: CustomizableDropDownValue[] // An array that defines the set of options for a drop down menu.
 }

@@ -13,5 +13,5 @@ export type AttributeMetadata = {
 	is_required: Boolean // Whether the attribute value is required.
 	is_unique: Boolean // Whether the attribute value must be unique.
 	label?: String // The label assigned to the attribute.
-	options: [CustomAttributeOptionInterface] // Attribute options.
+	options: CustomAttributeOptionInterface[] // Attribute options.
 }

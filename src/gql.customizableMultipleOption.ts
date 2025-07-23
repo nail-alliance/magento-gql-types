@@ -10,5 +10,5 @@ export type CustomizableMultipleOption = {
 	sort_order?: Int // The order in which the option is displayed.
 	title?: String // The display name for this option.
 	uid: ID // The unique ID for a CustomizableOptionInterface object.
-	value?: [CustomizableMultipleValue] // An array that defines the set of options for a multiselect.
+	value?: CustomizableMultipleValue[] // An array that defines the set of options for a multiselect.
 }

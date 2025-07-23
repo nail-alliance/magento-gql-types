@@ -18,5 +18,5 @@ export type ConfigurableProductOptions = {
 	product_id?: Int // This is the same as a product's id field. product_id is not needed and can be obtained from its parent. Deprecated
 	uid: ID // The unique ID for a ConfigurableProductOptions object.
 	use_default?: Boolean // Indicates whether the option is the default.
-	values?: [ConfigurableProductOptionsValues] // An array that defines the value_index codes assigned to the configurable product.
+	values?: ConfigurableProductOptionsValues[] // An array that defines the value_index codes assigned to the configurable product.
 }

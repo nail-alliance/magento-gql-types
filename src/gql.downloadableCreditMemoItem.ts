@@ -6,8 +6,8 @@ import {ID} from "./gql.ID";
 import {DownloadableItemsLinks} from "./gql.downloadableItemsLinks";
 import {Discount} from "./gql.discount";
 export type DownloadableCreditMemoItem = {
-	discounts?: [Discount] // Details about the final discount amount for the base product, including discounts on options.
-	downloadable_links?: [DownloadableItemsLinks] // A list of downloadable links that are refunded from the downloadable product.
+	discounts?: Discount[] // Details about the final discount amount for the base product, including discounts on options.
+	downloadable_links?: DownloadableItemsLinks[] // A list of downloadable links that are refunded from the downloadable product.
 	id: ID // The unique ID for a CreditMemoItemInterface object.
 	order_item?: OrderItemInterface // The order item the credit memo is applied to.
 	product_name?: String // The name of the base product.

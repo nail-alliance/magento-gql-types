@@ -6,7 +6,7 @@ import {ID} from "./gql.ID";
 import {GiftCardItem} from "./gql.giftCardItem";
 import {Discount} from "./gql.discount";
 export type GiftCardCreditMemoItem = {
-	discounts?: [Discount] // Details about the final discount amount for the base product, including discounts on options.
+	discounts?: Discount[] // Details about the final discount amount for the base product, including discounts on options.
 	gift_card?: GiftCardItem // Selected gift card properties for a credit memo item.
 	id: ID // The unique ID for a CreditMemoItemInterface object.
 	order_item?: OrderItemInterface // The order item the credit memo is applied to.

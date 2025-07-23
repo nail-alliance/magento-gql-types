@@ -5,7 +5,7 @@ import {OrderItemInterface} from "./gql.orderItemInterface";
 import {ID} from "./gql.ID";
 import {Discount} from "./gql.discount";
 export interface CreditMemoItemInterface {
-	discounts?: [Discount] // Details about the final discount amount for the base product, including discounts on options.
+	discounts?: Discount[] // Details about the final discount amount for the base product, including discounts on options.
 	id: ID // The unique ID for a CreditMemoItemInterface object.
 	order_item?: OrderItemInterface // The order item the credit memo is applied to.
 	product_name?: String // The name of the base product.

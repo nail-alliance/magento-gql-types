@@ -10,9 +10,9 @@ import {OrderItemOption} from "./gql.orderItemOption";
 import {Boolean} from "./gql.boolean";
 import {Discount} from "./gql.discount";
 export type OrderItem = {
-	discounts?: [Discount] // The final discount information for the product.
+	discounts?: Discount[] // The final discount information for the product.
 	eligible_for_return?: Boolean // Indicates whether the order item is eligible to be in a return request.
-	entered_options?: [OrderItemOption] // The entered option for the base product, such as a logo or image.
+	entered_options?: OrderItemOption[] // The entered option for the base product, such as a logo or image.
 	gift_message?: GiftMessage // The selected gift message for the order item
 	gift_wrapping?: GiftWrapping // The selected gift wrapping for the order item.
 	id: ID // The unique ID for an OrderItemInterface object.
@@ -30,6 +30,6 @@ export type OrderItem = {
 	quantity_return_requested?: Float // The requested return quantity of the item.
 	quantity_returned?: Float // The number of returned items.
 	quantity_shipped?: Float // The number of shipped items.
-	selected_options?: [OrderItemOption] // The selected options for the base product, such as color or size.
+	selected_options?: OrderItemOption[] // The selected options for the base product, such as color or size.
 	status?: String // The status of the order item.
 }

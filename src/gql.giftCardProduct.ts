@@ -33,7 +33,7 @@ export type GiftCardProduct = {
 	/** @deprecated */
 	attribute_set_id?: Int // The attribute set assigned to the product. The field should not be used on the storefront. Deprecated
 	canonical_url?: String // The relative canonical URL. This value is returned only if the system setting 'Use Canonical Link Meta Tag For Products' is enabled.
-	categories?: [CategoryInterface] // The categories assigned to a product.
+	categories?: CategoryInterface[] // The categories assigned to a product.
 	/** @deprecated */
 	category_gear?: String // Use the custom_attributes field instead. Deprecated
 	/** @deprecated */
@@ -45,7 +45,7 @@ export type GiftCardProduct = {
 	country_of_manufacture?: String // The product's country of origin.
 	/** @deprecated */
 	created_at?: String // Timestamp indicating when the product was created. The field should not be used on the storefront. Deprecated
-	crosssell_products?: [ProductInterface] // An array of cross-sell products.
+	crosssell_products?: ProductInterface[] // An array of cross-sell products.
 	custom_attributesV2?: ProductCustomAttributes // Product custom attributes.
 	description?: ComplexTextValue // Detailed information about the product. The value can include simple HTML tags.
 	/** @deprecated */
@@ -58,11 +58,11 @@ export type GiftCardProduct = {
 	format?: Int // Use the custom_attributes field instead. Deprecated
 	/** @deprecated */
 	gender?: String // Use the custom_attributes field instead. Deprecated
-	gift_card_options: [CustomizableOptionInterface] // An array of customizable gift card options.
+	gift_card_options: CustomizableOptionInterface[] // An array of customizable gift card options.
 	gift_message_available: Boolean // Returns a value indicating gift message availability for the product.
 	gift_wrapping_available: Boolean // Returns a value indicating gift wrapping availability for the product.
 	gift_wrapping_price?: Money // Returns value and currency indicating gift wrapping price for the product.
-	giftcard_amounts?: [GiftCardAmounts] // An array that contains information about the values and ID of a gift card.
+	giftcard_amounts?: GiftCardAmounts[] // An array that contains information about the values and ID of a gift card.
 	giftcard_type?: GiftCardTypeEnum // An enumeration that specifies the type of gift card.
 	/** @deprecated */
 	id?: Int // The ID number assigned to the product. Use the uid field instead. Deprecated
@@ -75,9 +75,9 @@ export type GiftCardProduct = {
 	/** @deprecated */
 	material?: String // Use the custom_attributes field instead. Deprecated
 	max_sale_qty?: Float // Maximum Qty Allowed in Shopping Cart
-	media_gallery?: [MediaGalleryInterface] // An array of media gallery objects.
+	media_gallery?: MediaGalleryInterface[] // An array of media gallery objects.
 	/** @deprecated */
-	media_gallery_entries?: [MediaGalleryEntry] // An array of MediaGalleryEntry objects. Use media_gallery instead. Deprecated
+	media_gallery_entries?: MediaGalleryEntry[] // An array of MediaGalleryEntry objects. Use media_gallery instead. Deprecated
 	message_max_length?: Int // The maximum number of characters the gift message can contain.
 	meta_description?: String // A brief overview of the product for search results listings, maximum 255 characters.
 	meta_keyword?: String // A comma-separated list of keywords that are visible only to search engines.
@@ -91,7 +91,7 @@ export type GiftCardProduct = {
 	only_x_left_in_stock?: Float // Product stock only x left count
 	open_amount_max?: Float // The maximum acceptable value of an open amount gift card.
 	open_amount_min?: Float // The minimum acceptable value of an open amount gift card.
-	options?: [CustomizableOptionInterface] // An array of options for a customizable product.
+	options?: CustomizableOptionInterface[] // An array of options for a customizable product.
 	options_container?: String // If the product has multiple options, determines where they appear on the product page.
 	/** @deprecated */
 	pattern?: String // Use the custom_attributes field instead. Deprecated
@@ -100,18 +100,18 @@ export type GiftCardProduct = {
 	/** @deprecated */
 	price?: ProductPrices // Indicates the price of an item. Use price_range for product price information. Deprecated
 	price_range: PriceRange // The range of prices for the product
-	price_tiers?: [TierPrice] // An array of TierPrice objects.
-	product_links?: [ProductLinksInterface] // An array of ProductLinks objects.
+	price_tiers?: TierPrice[] // An array of TierPrice objects.
+	product_links?: ProductLinksInterface[] // An array of ProductLinks objects.
 	/** @deprecated */
 	purpose?: Int // Use the custom_attributes field instead. Deprecated
 	quantity?: Float // Amount of available stock
 	rating_summary: Float // The average of all the ratings given to the product.
 	redirect_code: Int // Contains 0 when there is no redirect error. A value of 301 indicates the URL of the requested resource has been changed permanently, while a value of 302 indicates a temporary redirect.
-	related_products?: [ProductInterface] // An array of related products.
+	related_products?: ProductInterface[] // An array of related products.
 	relative_url?: String // The internal relative URL. If the specified URL is a redirect, the query returns the redirected URL, not the original.
 	review_count: Int // The total count of all the reviews given to the product.
 	reviews: ProductReviews // The list of products reviews.
-	rules?: [CatalogRule] // Provides applied catalog rules in the current active cart
+	rules?: CatalogRule[] // Provides applied catalog rules in the current active cart
 	/** @deprecated */
 	sale?: Int // Use the custom_attributes field instead. Deprecated
 	short_description?: ComplexTextValue // A short description of the product. Its use depends on the theme.
@@ -140,20 +140,20 @@ export type GiftCardProduct = {
 	/** @deprecated */
 	tier_price?: Float // The price when tier pricing is in effect and the items purchased threshold has been reached. Use price_tiers for product tier price information. Deprecated
 	/** @deprecated */
-	tier_prices?: [ProductTierPrices] // An array of ProductTierPrices objects. Use price_tiers for product tier price information. Deprecated
+	tier_prices?: ProductTierPrices[] // An array of ProductTierPrices objects. Use price_tiers for product tier price information. Deprecated
 	type?: UrlRewriteEntityTypeEnum // One of PRODUCT, CATEGORY, or CMS_PAGE.
 	/** @deprecated */
 	type_id?: String // One of simple, virtual, bundle, downloadable, grouped, or configurable. Use __typename instead. Deprecated
 	uid: ID // The unique ID for a ProductInterface object.
 	/** @deprecated */
 	updated_at?: String // Timestamp indicating when the product was updated. The field should not be used on the storefront. Deprecated
-	upsell_products?: [ProductInterface] // An array of up-sell products.
+	upsell_products?: ProductInterface[] // An array of up-sell products.
 	url_key?: String // The part of the URL that identifies the product
 	/** @deprecated */
 	url_path?: String // Use product's canonical_url or url rewrites instead Deprecated
-	url_rewrites?: [UrlRewrite] // URL rewrites list
+	url_rewrites?: UrlRewrite[] // URL rewrites list
 	url_suffix?: String // The part of the product URL that is appended after the url key
 	/** @deprecated */
-	websites?: [Website] // An array of websites in which the product is available. The field should not be used on the storefront. Deprecated
+	websites?: Website[] // An array of websites in which the product is available. The field should not be used on the storefront. Deprecated
 	weight?: Float // The weight of the item, in units defined by the store.
 }

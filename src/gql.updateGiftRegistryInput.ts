@@ -4,7 +4,7 @@ import {GiftRegistryPrivacySettings} from "./gql.giftRegistryPrivacySettings";
 import {String} from "./gql.string";
 import {GiftRegistryDynamicAttributeInput} from "./gql.giftRegistryDynamicAttributeInput";
 export type UpdateGiftRegistryInput = {
-	dynamic_attributes?: [GiftRegistryDynamicAttributeInput] // Additional attributes specified as a code-value pair. Unspecified dynamic attributes are not changed.
+	dynamic_attributes?: GiftRegistryDynamicAttributeInput[] // Additional attributes specified as a code-value pair. Unspecified dynamic attributes are not changed.
 	event_name?: String // The updated name of the event.
 	message?: String // The updated message describing the event.
 	privacy_settings?: GiftRegistryPrivacySettings // Indicates whether the gift registry is PRIVATE or PUBLIC.

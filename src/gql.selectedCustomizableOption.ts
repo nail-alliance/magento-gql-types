@@ -11,5 +11,5 @@ export type SelectedCustomizableOption = {
 	label: String // The display name of the selected customizable option.
 	sort_order: Int // A value indicating the order to display this option.
 	type: String // The type of CustomizableOptionInterface object.
-	values: [SelectedCustomizableOptionValue] // An array of selectable values.
+	values: SelectedCustomizableOptionValue[] // An array of selectable values.
 }

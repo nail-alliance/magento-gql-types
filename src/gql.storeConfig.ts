@@ -195,7 +195,7 @@ export type StoreConfig = {
 	no_route?: String // The default page that displays when a 404 'Page not Found' error occurs.
 	optional_zip_countries?: String // Extended Config Data - general/country/optional_zip_countries
 	order_cancellation_enabled: Boolean // Indicates whether orders can be cancelled by customers or not.
-	order_cancellation_reasons: [CancellationReason] // An array containing available cancellation reasons.
+	order_cancellation_reasons: CancellationReason[] // An array containing available cancellation reasons.
 	orders_invoices_credit_memos_display_full_summary: Boolean // Configuration data from tax/sales_display/full_summary
 	orders_invoices_credit_memos_display_grandtotal: Boolean // Configuration data from tax/sales_display/grandtotal
 	orders_invoices_credit_memos_display_price: Int // Configuration data from tax/sales_display/price

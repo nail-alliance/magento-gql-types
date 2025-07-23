@@ -8,8 +8,8 @@ import {Breadcrumb} from "./gql.breadcrumb";
 import {String} from "./gql.string";
 export interface CategoryInterface {
 	automatic_sorting?: String // 
-	available_sort_by?: [String] // 
-	breadcrumbs?: [Breadcrumb] // An array of breadcrumb items.
+	available_sort_by?: String[] // 
+	breadcrumbs?: Breadcrumb[] // An array of breadcrumb items.
 	canonical_url?: String // The relative canonical URL. This value is returned only if the system setting 'Use Canonical Link Meta Tag For Categories' is enabled.
 	children_count?: String // 
 	cms_block?: CmsBlock // Contains a category CMS block.

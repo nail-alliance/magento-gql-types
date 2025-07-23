@@ -1,4 +1,4 @@
 import {CmsBlock} from "./gql.cmsBlock";
 export type CmsBlocks = {
-	items?: [CmsBlock] // An array of CMS blocks.
+	items?: CmsBlock[] // An array of CMS blocks.
 }
