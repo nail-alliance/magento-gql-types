@@ -1,2 +1,1 @@
-export type String = {
-}
+export type String = string

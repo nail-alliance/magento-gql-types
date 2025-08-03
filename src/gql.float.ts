@@ -1,2 +1,1 @@
-export type Float = {
-}
+export type Float = number

@@ -1,2 +1,1 @@
-export type Boolean = {
-}
+export type Boolean = boolean

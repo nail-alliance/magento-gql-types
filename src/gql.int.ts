@@ -1,2 +1,1 @@
-export type Int = {
-}
+export type Int = number
